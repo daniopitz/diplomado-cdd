@@ -1,0 +1,19 @@
+# Entorno
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+
+# Scripts que arman el material (solo se publican los resultados)
+presentaciones/build_*.py
+presentaciones/estilo.py
+presentaciones/figuras_*.py
+
+# Evaluaciones no aplicadas y sus pautas (se publican con git add -f despues de aplicadas)
+evaluaciones/*
+!evaluaciones/.gitkeep
+
+# Lecturas con copyright (se distribuyen por el aula virtual)
+lecturas/*.pdf
+lecturas/*.epub
