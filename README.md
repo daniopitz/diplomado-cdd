@@ -27,9 +27,10 @@ datos. La asignatura se aprueba con una calificación mínima de 60%.
 
 ## Calendario de clases
 
-Ocho clases de dos horas. Las fechas corresponden al calendario oficial del
-diplomado y son firmes; los temas de cada clase pueden ajustarse sobre la marcha
-según el avance del grupo.
+Ocho clases de dos horas y media (18:00 a 20:30), en dos bloques de unos 70
+minutos con un recreo de 10 minutos a mitad de clase. Las fechas corresponden al
+calendario oficial del diplomado y son firmes; los temas de cada clase pueden
+ajustarse sobre la marcha según el avance del grupo.
 
 | # | Fecha | Contenidos | Slides | Notebook |
 |---|-------|------------|--------|----------|
