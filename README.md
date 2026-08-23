@@ -34,7 +34,7 @@ ajustarse sobre la marcha según el avance del grupo.
 
 | # | Fecha | Contenidos | Slides | Notebook |
 |---|-------|------------|--------|----------|
-| 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Tipos de datos y tipos de variables. Ecosistema Python para ciencia de datos: NumPy, Pandas y Matplotlib. Puesta en marcha del entorno con uv y Jupyter | | |
+| 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Tipos de datos y tipos de variables. Ecosistema Python para ciencia de datos: NumPy, Pandas y Matplotlib. Puesta en marcha del entorno con uv y Jupyter | [PDF](presentaciones/clase01_fundamentos_ecosistema.pdf) | [local](01_intro_ecosistema.ipynb) · [abrir en Colab](https://colab.research.google.com/github/daniopitz/diplomado-cdd/blob/main/01_intro_ecosistema_colab.ipynb) |
 | 2 | ju 27-ago | Estadística descriptiva: medidas de tendencia central, dispersión y forma | | |
 | 3 | ma 01-sep | Análisis exploratorio de datos (EDA): univariado, bivariado, correlación y visualización con Matplotlib | | |
 | 4 | ju 03-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones | | |
@@ -59,11 +59,9 @@ quedar funcionando antes de la clase 2. El material de cada clase (slides en PDF
 y notebook en Python) se enlaza en la tabla del calendario a medida que se
 publica.
 
-Cada notebook se puede usar de dos formas: descargándolo y ejecutándolo en el
-entorno local del curso, o abriéndolo en Google Colab con el enlace "abrir en
-Colab" de la tabla, sin instalar nada. Es el mismo archivo en ambos casos; los
-datos se leen desde una URL, así que el notebook funciona igual en las dos
-modalidades.
+Cada clase tiene dos notebooks equivalentes: uno para el entorno local del curso
+y una versión para Google Colab, que se abre con el enlace "abrir en Colab" de la
+tabla y corre sin instalar nada. En ambos, los datos se leen desde una URL.
 
 Algunos conjuntos de datos son compartidos con el curso INF-396 de pregrado,
 entre ellos la Encuesta Origen Destino de Santiago 2012 y los registros de

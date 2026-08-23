@@ -9,6 +9,8 @@ __pycache__/
 presentaciones/build_*.py
 presentaciones/estilo.py
 presentaciones/figuras_*.py
+presentaciones/figuras/
+presentaciones/slide-*.png
 
 # Evaluaciones no aplicadas y sus pautas (se publican con git add -f despues de aplicadas)
 evaluaciones/*
