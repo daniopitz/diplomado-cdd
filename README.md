@@ -31,36 +31,30 @@ Ocho clases de dos horas. Las fechas corresponden al calendario oficial del
 diplomado y son firmes; los temas de cada clase pueden ajustarse sobre la marcha
 según el avance del grupo.
 
-| # | Fecha | Contenidos | Slides | Notebook | Hitos |
-|---|-------|------------|--------|----------|-------|
-| 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Puesta en marcha del entorno: Python, uv, Jupyter y primer contacto con Pandas | | | Se publica el enunciado del proyecto final |
-| 2 | ju 27-ago | Ecosistema Python: NumPy, Pandas y Matplotlib. Tipos de datos y tipos de variables | | | |
-| 3 | ma 01-sep | Estadística descriptiva: medidas de tendencia central, dispersión y forma | | | |
-| 4 | ju 03-sep | Análisis exploratorio de datos: univariado y bivariado, correlación | | | |
-| 5 | ma 08-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones | | | |
-| 6 | ju 10-sep | Nociones de inferencia estadística: estimación, intervalos de confianza y pruebas de hipótesis | | | |
-| 7 | ma 15-sep | Regresión lineal simple y múltiple. Regresión logística | | | |
-| | ju 17-sep | Sin clases (suspendida por ser preferiado) | | | |
-| 8 | ma 22-sep | Reducción de dimensionalidad (PCA) y cierre del módulo | | | Cierre del módulo |
+| # | Fecha | Contenidos | Slides | Notebook |
+|---|-------|------------|--------|----------|
+| 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Puesta en marcha del entorno: Python, uv, Jupyter y primer contacto con Pandas | | |
+| 2 | ju 27-ago | Ecosistema Python: NumPy, Pandas y Matplotlib. Tipos de datos y tipos de variables | | |
+| 3 | ma 01-sep | Estadística descriptiva: medidas de tendencia central, dispersión y forma | | |
+| 4 | ju 03-sep | Análisis exploratorio de datos: univariado y bivariado, correlación | | |
+| 5 | ma 08-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones | | |
+| 6 | ju 10-sep | Nociones de inferencia estadística: estimación, intervalos de confianza y pruebas de hipótesis | | |
+| 7 | ma 15-sep | Regresión lineal simple y múltiple. Regresión logística | | |
+| | ju 17-sep | Sin clases (suspendida por ser preferiado) | | |
+| 8 | ma 22-sep | Reducción de dimensionalidad (PCA) y cierre del módulo | | |
 
 ## Evaluación: proyecto final
 
 El módulo se evalúa con un proyecto final aplicado sobre datos reales, que
 recorre el ciclo completo visto en el curso: pregunta, datos, exploración,
-análisis y comunicación de resultados.
-
-| Hito | Fecha | Estado |
-|------|-------|--------|
-| Se publica el enunciado | clase 1 (ma 25-ago) | por confirmar |
-| Se entrega el proyecto | después de la clase 8, fecha por definir | por confirmar |
-
-La pauta del proyecto y su rúbrica se publican junto con el enunciado.
+análisis y comunicación de resultados. El enunciado, la pauta y la fecha de
+entrega se publican durante las primeras clases del módulo.
 
 ## Material
 
-Antes de la primera clase se publica una guía de instalación del entorno de
-trabajo (Python, uv y Jupyter), que se verifica en la segunda parte de la clase 1.
-El material de cada clase (slides en PDF y notebook en Python) se enlaza en la
+La instalación del entorno de trabajo (Python, uv y Jupyter) se explica en la
+clase 1, siguiendo la [guía de instalación](guia_instalacion.md); el entorno debe
+quedar funcionando antes de la clase 2. El material de cada clase (slides en PDF y notebook en Python) se enlaza en la
 tabla del calendario a medida que se publica. Algunos conjuntos de datos son
 compartidos con el curso INF-396 de pregrado, entre ellos la Encuesta Origen
 Destino de Santiago 2012 y los registros de emisiones al aire (RETC 2020).

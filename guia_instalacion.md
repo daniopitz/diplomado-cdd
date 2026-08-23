@@ -5,14 +5,16 @@ estadísticos. Universidad Técnica Federico Santa María.
 
 En este módulo trabajaremos con Python, Jupyter y las librerías NumPy, Pandas y
 Matplotlib, entre otras. Esta guía deja todo instalado y funcionando en su
-computador personal. Le pedimos completarla **antes de la primera clase** (martes
-25 de agosto): en la segunda parte de esa clase usaremos el entorno, y así el
-tiempo se dedica a trabajar con datos y no a resolver instalaciones.
+computador personal. **La revisaremos paso a paso en la primera clase** (martes
+25 de agosto), así que no es necesario hacer nada antes; si quiere adelantarse,
+puede seguirla por su cuenta. Lo importante es llegar a la **clase 2** (jueves 27
+de agosto) **con el entorno funcionando**, porque desde ahí trabajaremos con
+código en todas las clases.
 
 Si algo no funciona, no se preocupe: anote el mensaje de error y el paso en que
-apareció, y lo revisamos al inicio del bloque práctico. Al final de la guía hay
-una sección de problemas frecuentes y un plan alternativo en la nube por si su
-computador tiene restricciones de instalación.
+apareció, y lo revisamos en la clase 1, o escríbanos antes de la clase 2. Al
+final de la guía hay una sección de problemas frecuentes y un plan alternativo en
+la nube por si su computador tiene restricciones de instalación.
 
 Tiempo estimado: 15 a 20 minutos, con conexión a internet.
 
@@ -134,7 +136,7 @@ Colab sirve perfectamente para las clases; la única diferencia es que los
 archivos de datos hay que subirlos a la sesión o montarlos desde Google Drive,
 lo que veremos en clase si alguien lo necesita.
 
-## Antes de la clase 1, en resumen
+## Antes de la clase 2, en resumen
 
 1. uv instalado (`uv --version` responde).
 2. Carpeta del curso creada, con el entorno instalado (`uv add ...` terminó sin
