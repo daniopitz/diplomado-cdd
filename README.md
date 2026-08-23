@@ -22,7 +22,7 @@ datos. La asignatura se aprueba con una calificación mínima de 60%.
 - Análisis exploratorio de datos (EDA).
 - Fundamentos de probabilidad.
 - Nociones básicas de inferencia estadística.
-- Regresión lineal y regresión logística.
+- Regresión lineal, regresión regularizada (Ridge y Lasso) y regresión logística.
 - Reducción de dimensionalidad.
 
 ## Calendario de clases
@@ -33,13 +33,13 @@ según el avance del grupo.
 
 | # | Fecha | Contenidos | Slides | Notebook |
 |---|-------|------------|--------|----------|
-| 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Puesta en marcha del entorno: Python, uv, Jupyter y primer contacto con Pandas | | |
-| 2 | ju 27-ago | Ecosistema Python: NumPy, Pandas y Matplotlib. Tipos de datos y tipos de variables | | |
-| 3 | ma 01-sep | Estadística descriptiva: medidas de tendencia central, dispersión y forma | | |
-| 4 | ju 03-sep | Análisis exploratorio de datos: univariado y bivariado, correlación | | |
-| 5 | ma 08-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones | | |
-| 6 | ju 10-sep | Nociones de inferencia estadística: estimación, intervalos de confianza y pruebas de hipótesis | | |
-| 7 | ma 15-sep | Regresión lineal simple y múltiple. Regresión logística | | |
+| 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Tipos de datos y tipos de variables. Ecosistema Python para ciencia de datos: NumPy, Pandas y Matplotlib. Puesta en marcha del entorno con uv y Jupyter | | |
+| 2 | ju 27-ago | Estadística descriptiva: medidas de tendencia central, dispersión y forma | | |
+| 3 | ma 01-sep | Análisis exploratorio de datos (EDA): univariado, bivariado, correlación y visualización con Matplotlib | | |
+| 4 | ju 03-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones | | |
+| 5 | ma 08-sep | Nociones de inferencia estadística: estimación, intervalos de confianza y pruebas de hipótesis | | |
+| 6 | ju 10-sep | Regresión lineal simple y múltiple | | |
+| 7 | ma 15-sep | Regresión regularizada (Ridge y Lasso) y regresión logística | | |
 | | ju 17-sep | Sin clases (suspendida por ser preferiado) | | |
 | 8 | ma 22-sep | Reducción de dimensionalidad (PCA) y cierre del módulo | | |
 
@@ -54,7 +54,22 @@ entrega se publican durante las primeras clases del módulo.
 
 La instalación del entorno de trabajo (Python, uv y Jupyter) se explica en la
 clase 1, siguiendo la [guía de instalación](guia_instalacion.md); el entorno debe
-quedar funcionando antes de la clase 2. El material de cada clase (slides en PDF y notebook en Python) se enlaza en la
-tabla del calendario a medida que se publica. Algunos conjuntos de datos son
-compartidos con el curso INF-396 de pregrado, entre ellos la Encuesta Origen
-Destino de Santiago 2012 y los registros de emisiones al aire (RETC 2020).
+quedar funcionando antes de la clase 2. El material de cada clase (slides en PDF
+y notebook en Python) se enlaza en la tabla del calendario a medida que se
+publica.
+
+Cada notebook se puede usar de dos formas: descargándolo y ejecutándolo en el
+entorno local del curso, o abriéndolo en Google Colab con el enlace "abrir en
+Colab" de la tabla, sin instalar nada. Es el mismo archivo en ambos casos; los
+datos se leen desde una URL, así que el notebook funciona igual en las dos
+modalidades.
+
+Algunos conjuntos de datos son compartidos con el curso INF-396 de pregrado,
+entre ellos la Encuesta Origen Destino de Santiago 2012 y los registros de
+emisiones al aire (RETC 2020).
+
+Como lectura complementaria de acceso abierto se recomienda el
+[Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+de Jake VanderPlas (versión completa en línea, con notebooks ejecutables en
+Colab): sus capítulos de NumPy, Pandas y Matplotlib acompañan las primeras
+clases, y el de regresión lineal, la clase 7.
