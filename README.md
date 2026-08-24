@@ -62,6 +62,10 @@ Los talleres de ecosistema Python que el programa asigna a las semanas 2 y 3 se
 realizan dentro del bloque práctico de las clases de esas semanas, con los
 notebooks del curso; no son sesiones aparte.
 
+Las ayudantías son sesiones aparte, dedicadas a resolver dudas técnicas (por
+ejemplo, instalación y uso del entorno) con los ayudantes del diplomado. El
+horario se publica próximamente.
+
 ## Material
 
 La instalación del entorno de trabajo (Python, uv y Jupyter) se explica en la
