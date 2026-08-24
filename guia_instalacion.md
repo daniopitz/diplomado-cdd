@@ -76,16 +76,19 @@ y ejecute `uv sync`.
 instala Python 3.12 y las mismas versiones de las librerías para todo el curso.
 La descarga toma unos minutos la primera vez.
 
-## Paso 3: abrir JupyterLab y verificar
+## Paso 3: abrir un notebook y verificar
 
-Desde la misma carpeta, ejecute:
+Elija el editor que le acomode:
 
-```bash
-uv run jupyter lab
-```
+- **VS Code (el que se usa en las clases)**: abra la carpeta del curso
+  (`Archivo > Abrir carpeta`), instale las extensiones "Python" y "Jupyter" de
+  Microsoft, abra un notebook y seleccione como kernel el intérprete de Python
+  de la subcarpeta `.venv`. No necesita ejecutar ningún comando adicional.
+- **JupyterLab (opcional, si no usa VS Code)**: desde la carpeta del curso
+  ejecute `uv run jupyter lab`; se abre en el navegador y no requiere
+  configurar nada más.
 
-Se abrirá JupyterLab en su navegador. Cree un notebook nuevo (botón Python 3) y
-ejecute esta celda:
+Para verificar, cree un notebook nuevo y ejecute esta celda:
 
 ```python
 import numpy as np
@@ -101,21 +104,12 @@ pd.DataFrame({"comuna": ["Santiago", "Providencia", "Maipú"],
 ```
 
 Si ve las tres versiones impresas y una tabla con tres comunas, el entorno quedó
-listo. Puede cerrar JupyterLab con Ctrl+C en la terminal.
+listo.
 
-Para volver a trabajar cualquier otro día, basta con entrar a la carpeta y
-repetir `uv run jupyter lab`. Cada semana, `git pull` trae el material nuevo
-(o vuelva a descargar el ZIP); si cambian las dependencias, `uv sync` deja el
-entorno al día.
-
-## Trabajar en VS Code
-
-En las clases el material se muestra en Visual Studio Code. Para trabajar
-igual: abra la carpeta del curso (`Archivo > Abrir carpeta`), instale las
-extensiones "Python" y "Jupyter" de Microsoft, y al abrir un notebook
-seleccione como kernel el intérprete de Python de la subcarpeta `.venv`.
-JupyterLab (paso 3) funciona igual y no requiere instalar nada más: use el que
-le acomode.
+Para volver a trabajar cualquier otro día, basta con abrir la carpeta del curso
+en su editor. Cada semana, `git pull` trae el material nuevo (o vuelva a
+descargar el ZIP); si cambian las dependencias, `uv sync` deja el entorno al
+día.
 
 ## Problemas frecuentes
 
@@ -156,6 +150,7 @@ lo que veremos en clase si alguien lo necesita.
 1. uv instalado (`uv --version` responde).
 2. Repositorio del curso descargado y entorno instalado (`uv sync` terminó
    sin errores).
-3. JupyterLab abre y la celda de verificación muestra las versiones y la tabla.
+3. La celda de verificación muestra las versiones y la tabla (en VS Code o
+   JupyterLab).
 
 Nos vemos el martes 25 de agosto a las 18:00.
