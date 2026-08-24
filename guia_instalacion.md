@@ -108,12 +108,14 @@ repetir `uv run jupyter lab`. Cada semana, `git pull` trae el material nuevo
 (o vuelva a descargar el ZIP); si cambian las dependencias, `uv sync` deja el
 entorno al día.
 
-## Alternativa: VS Code
+## Trabajar en VS Code
 
-Si prefiere trabajar en Visual Studio Code, abra la carpeta del curso
-(`Archivo > Abrir carpeta`), instale la extensión "Jupyter" de Microsoft, y al
-abrir un notebook seleccione como kernel el intérprete de Python de la
-subcarpeta `.venv`. El resto funciona igual.
+En las clases el material se muestra en Visual Studio Code. Para trabajar
+igual: abra la carpeta del curso (`Archivo > Abrir carpeta`), instale las
+extensiones "Python" y "Jupyter" de Microsoft, y al abrir un notebook
+seleccione como kernel el intérprete de Python de la subcarpeta `.venv`.
+JupyterLab (paso 3) funciona igual y no requiere instalar nada más: use el que
+le acomode.
 
 ## Problemas frecuentes
 
@@ -139,7 +141,11 @@ Si su computador es administrado por su empresa y no permite instalar programas,
 puede seguir el módulo con [Google Colab](https://colab.research.google.com),
 que ejecuta notebooks en la nube y ya trae NumPy, Pandas y Matplotlib
 instalados. Solo necesita una cuenta de Google. Los notebooks del curso se
-pueden subir a Colab con `Archivo > Subir notebook`.
+abren con los enlaces del README del repositorio.
+
+Importante: los cambios sobre el enlace del curso no quedan guardados. Antes de
+trabajar, guarde su propia copia con `Archivo > Guardar una copia en Drive` y
+organice sus copias en una carpeta del curso en su Google Drive.
 
 Colab sirve perfectamente para las clases; la única diferencia es que los
 archivos de datos hay que subirlos a la sesión o montarlos desde Google Drive,
