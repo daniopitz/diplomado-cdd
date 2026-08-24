@@ -37,7 +37,7 @@ ajustarse sobre la marcha según el avance del grupo.
 | 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Tipos de datos y tipos de variables. Ecosistema Python para ciencia de datos: NumPy, Pandas y Matplotlib. Puesta en marcha del entorno con uv y Jupyter | [PDF](presentaciones/clase01_fundamentos_ecosistema.pdf) | [notebook](01_intro_ecosistema.ipynb) · [plantilla](01_intro_ecosistema_plantilla.ipynb) | [abrir en Colab](https://colab.research.google.com/github/daniopitz/diplomado-cdd/blob/main/01_intro_ecosistema_colab.ipynb) · [plantilla](https://colab.research.google.com/github/daniopitz/diplomado-cdd/blob/main/01_intro_ecosistema_plantilla_colab.ipynb) |
 | 2 | ju 27-ago | Estadística descriptiva: medidas de tendencia central, dispersión y forma | | | |
 | 3 | ma 01-sep | Análisis exploratorio de datos (EDA): univariado, bivariado, correlación y visualización con Matplotlib | | | |
-| 4 | ju 03-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones | | | |
+| 4 | ju 03-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones. Presentaciones breves de las ideas de proyecto Capstone | | | |
 | 5 | ma 08-sep | Nociones de inferencia estadística: estimación, intervalos de confianza y pruebas de hipótesis | | | |
 | 6 | ju 10-sep | Regresión lineal simple y múltiple | | | |
 | 7 | ma 15-sep | Regresión regularizada (Ridge y Lasso) y regresión logística | | | |
@@ -57,6 +57,18 @@ evalúa con tres actividades asociadas al proyecto Capstone del diplomado:
 
 Calificación mínima de aprobación: 60%. Las fechas de entrega y las pautas se
 publican durante el módulo.
+
+### Calendario de evaluaciones (propuesta, por confirmar en el aula virtual)
+
+| Hito | Fecha |
+|------|-------|
+| Se publica la pauta de formulación del proyecto Capstone (clase 2) | ju 27-ago |
+| Presentación breve de la idea del proyecto, máximo 5 minutos por persona (clase 4) | ju 03-sep |
+| Se entrega la formulación del proyecto Capstone (30%) | lu 07-sep |
+| Se publica la pauta del primer análisis exploratorio (clase 4) | ju 03-sep |
+| Se entrega el primer análisis exploratorio de datos (40%) | lu 15-sep |
+| Presentación oral del avance, en la clase 8 (25%) | ma 22-sep |
+| Se entrega el informe escrito de avance | vi 25-sep |
 
 Los talleres de ecosistema Python que el programa asigna a las semanas 2 y 3 se
 realizan dentro del bloque práctico de las clases de esas semanas, con los
