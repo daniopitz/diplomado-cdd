@@ -23,8 +23,12 @@ Tiempo estimado: 15 a 20 minutos, con conexión a internet.
 - **uv**: un administrador de entornos y paquetes de Python. Se encarga de
   descargar Python, crear el entorno del curso e instalar las librerías, todo con
   un par de comandos. No necesita tener Python instalado previamente.
+- **git** (recomendado): para clonar el repositorio del curso y recibir el
+  material nuevo cada semana. Sin git también se puede: el repositorio se
+  descarga como ZIP.
 - **El entorno del módulo**: Python 3.12 con NumPy, Pandas, Matplotlib, Seaborn,
-  SciPy, statsmodels, scikit-learn y JupyterLab.
+  SciPy, statsmodels, scikit-learn y JupyterLab. Las versiones exactas vienen
+  fijadas en el repositorio, así todo el curso trabaja con el mismo entorno.
 
 ## Paso 1: instalar uv
 
@@ -52,26 +56,25 @@ uv --version
 Debería ver el número de versión (por ejemplo `uv 0.8.x`). Si aparece un error de
 comando no encontrado, revise la sección de problemas frecuentes.
 
-## Paso 2: crear la carpeta y el entorno del módulo
+## Paso 2: descargar el repositorio del curso y crear el entorno
 
-Cree una carpeta para el curso y entre en ella. Por ejemplo:
-
-```bash
-mkdir diplomado_datos
-cd diplomado_datos
-```
-
-Inicialice el proyecto y agregue las librerías del módulo (uv descarga Python
-3.12 automáticamente si no lo tiene):
+Todo el material del módulo (notebooks, datos, esta guía) vive en el
+repositorio [github.com/daniopitz/diplomado-cdd](https://github.com/daniopitz/diplomado-cdd).
+Clónelo y cree el entorno:
 
 ```bash
-uv init --bare --python 3.12
-uv add numpy pandas matplotlib seaborn scipy statsmodels scikit-learn jupyterlab
+git clone https://github.com/daniopitz/diplomado-cdd.git
+cd diplomado-cdd
+uv sync
 ```
 
-La descarga toma unos minutos la primera vez. Al terminar, la carpeta tendrá un
-archivo `pyproject.toml` (la lista de librerías) y un archivo `uv.lock` (las
-versiones exactas instaladas). No es necesario editarlos.
+Si no tiene git, descargue el repositorio como ZIP (botón verde `Code` >
+`Download ZIP` en GitHub), descomprímalo, entre a la carpeta desde la terminal
+y ejecute `uv sync`.
+
+`uv sync` lee los archivos `pyproject.toml` y `uv.lock` del repositorio e
+instala Python 3.12 y las mismas versiones de las librerías para todo el curso.
+La descarga toma unos minutos la primera vez.
 
 ## Paso 3: abrir JupyterLab y verificar
 
@@ -101,7 +104,9 @@ Si ve las tres versiones impresas y una tabla con tres comunas, el entorno qued�
 listo. Puede cerrar JupyterLab con Ctrl+C en la terminal.
 
 Para volver a trabajar cualquier otro día, basta con entrar a la carpeta y
-repetir `uv run jupyter lab`.
+repetir `uv run jupyter lab`. Cada semana, `git pull` trae el material nuevo
+(o vuelva a descargar el ZIP); si cambian las dependencias, `uv sync` deja el
+entorno al día.
 
 ## Alternativa: VS Code
 
@@ -122,7 +127,11 @@ subcarpeta `.venv`. El resto funciona igual.
   otra red (por ejemplo la de su casa). Si el bloqueo persiste, use el plan
   alternativo en la nube y escríbanos.
 - **macOS pide instalar "herramientas de línea de comandos"**: acepte la
-  instalación que propone el sistema y reintente el paso 1.
+  instalación que propone el sistema y reintente el paso 1 (esas herramientas
+  incluyen git).
+- **`git` no está instalado**: en Windows se descarga de
+  [git-scm.com](https://git-scm.com); en macOS viene con las herramientas de
+  línea de comandos. O use la descarga ZIP del paso 2.
 
 ## Plan alternativo: Google Colab
 
@@ -139,8 +148,8 @@ lo que veremos en clase si alguien lo necesita.
 ## Antes de la clase 2, en resumen
 
 1. uv instalado (`uv --version` responde).
-2. Carpeta del curso creada, con el entorno instalado (`uv add ...` terminó sin
-   errores).
+2. Repositorio del curso descargado y entorno instalado (`uv sync` terminó
+   sin errores).
 3. JupyterLab abre y la celda de verificación muestra las versiones y la tabla.
 
 Nos vemos el martes 25 de agosto a las 18:00.
