@@ -35,14 +35,14 @@ ajustarse sobre la marcha según el avance del grupo.
 | # | Fecha | Contenidos | Slides | Notebook | Colab |
 |---|-------|------------|--------|----------|-------|
 | 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Tipos de datos y tipos de variables. Ecosistema Python para ciencia de datos: NumPy, Pandas y Matplotlib. Puesta en marcha del entorno con uv y Jupyter | [PDF](presentaciones/clase01_fundamentos_ecosistema.pdf) | [notebook](01_intro_ecosistema.ipynb) · [plantilla](01_intro_ecosistema_plantilla.ipynb) | [abrir en Colab](https://colab.research.google.com/github/daniopitz/diplomado-cdd/blob/main/01_intro_ecosistema_colab.ipynb) · [plantilla](https://colab.research.google.com/github/daniopitz/diplomado-cdd/blob/main/01_intro_ecosistema_plantilla_colab.ipynb) |
-| 2 | ju 27-ago | Estadística descriptiva: medidas de tendencia central, dispersión y forma | | | |
+| 2 | ju 27-ago | Estadística descriptiva: medidas de tendencia central, dispersión y forma. Se publica la pauta de formulación del proyecto Capstone | | | |
 | 3 | ma 01-sep | Análisis exploratorio de datos (EDA): univariado, bivariado, correlación y visualización con Matplotlib | | | |
 | 4 | ju 03-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones. Presentaciones breves de las ideas de proyecto Capstone | | | |
 | 5 | ma 08-sep | Nociones de inferencia estadística: estimación, intervalos de confianza y pruebas de hipótesis | | | |
 | 6 | ju 10-sep | Regresión lineal simple y múltiple | | | |
 | 7 | ma 15-sep | Regresión regularizada (Ridge y Lasso) y regresión logística | | | |
 | | ju 17-sep | Sin clases (suspendida por ser preferiado) | | | |
-| 8 | ma 22-sep | Reducción de dimensionalidad (PCA) y cierre del módulo | | | |
+| 8 | ma 22-sep | Reducción de dimensionalidad (PCA) y cierre del módulo. Presentación oral del avance del proyecto Capstone | | | |
 
 ## Evaluación
 
