@@ -58,6 +58,10 @@ evalúa con tres actividades asociadas al proyecto Capstone del diplomado:
 Calificación mínima de aprobación: 60%. Las fechas de entrega y las pautas se
 publican durante el módulo.
 
+Los talleres de ecosistema Python que el programa asigna a las semanas 2 y 3 se
+realizan dentro del bloque práctico de las clases de esas semanas, con los
+notebooks del curso; no son sesiones aparte.
+
 ## Material
 
 La instalación del entorno de trabajo (Python, uv y Jupyter) se explica en la
