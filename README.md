@@ -44,12 +44,19 @@ ajustarse sobre la marcha según el avance del grupo.
 | | ju 17-sep | Sin clases (suspendida por ser preferiado) | | | |
 | 8 | ma 22-sep | Reducción de dimensionalidad (PCA) y cierre del módulo | | | |
 
-## Evaluación: proyecto final
+## Evaluación
 
-El módulo se evalúa con un proyecto final aplicado sobre datos reales, que
-recorre el ciclo completo visto en el curso: pregunta, datos, exploración,
-análisis y comunicación de resultados. El enunciado, la pauta y la fecha de
-entrega se publican durante las primeras clases del módulo.
+Según el programa oficial de la asignatura (ver `programa/`), el módulo se
+evalúa con tres actividades asociadas al proyecto Capstone del diplomado:
+
+| Actividad | Resultado de aprendizaje | Ponderación |
+|-----------|--------------------------|-------------|
+| Formulación del proyecto Capstone y de la innovación propuesta | RA1.2 | 30% |
+| Primer análisis exploratorio de datos: código con NumPy, Pandas y Matplotlib sobre datos del proyecto | RA1.1 | 40% |
+| Informe de avance del proyecto Capstone: comunicación oral y escrita de los primeros hallazgos | RA1.2 | 25% |
+
+Calificación mínima de aprobación: 60%. Las fechas de entrega y las pautas se
+publican durante el módulo.
 
 ## Material
 
