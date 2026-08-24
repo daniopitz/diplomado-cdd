@@ -60,15 +60,11 @@ publican durante el módulo.
 
 ### Calendario de evaluaciones (propuesta, por confirmar en el aula virtual)
 
-| Hito | Fecha |
-|------|-------|
-| Se publica la rúbrica de formulación del proyecto Capstone (clase 2) | ju 27-ago |
-| Presentación breve de la idea del proyecto, máximo 5 minutos por persona (clase 4) | ju 03-sep |
-| Se entrega la formulación del proyecto Capstone (30%) | lu 07-sep |
-| Se publica la rúbrica del primer análisis exploratorio (clase 4) | ju 03-sep |
-| Se entrega el primer análisis exploratorio de datos (40%) | lu 15-sep |
-| Presentación oral del avance, en la clase 8 (25%) | ma 22-sep |
-| Se entrega el informe escrito de avance | vi 25-sep |
+| Actividad | Entrega | Rúbrica disponible | Presentación |
+|-----------|---------|--------------------|--------------|
+| Formulación del proyecto Capstone (30%) | **lu 07-sep** | ju 27-ago (clase 2) | idea, máximo 5 minutos por persona: ju 03-sep (clase 4) |
+| Primer análisis exploratorio de datos (40%) | **lu 15-sep** | ju 03-sep (clase 4) | |
+| Informe de avance del proyecto (25%) | **vi 25-sep** (informe escrito) | por definir | oral: ma 22-sep (clase 8) |
 
 Los talleres de ecosistema Python que el programa asigna a las semanas 2 y 3 se
 realizan dentro del bloque práctico de las clases de esas semanas, con los
