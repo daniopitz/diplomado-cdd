@@ -41,6 +41,8 @@ En macOS o Linux (aplicación Terminal):
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
+En macOS, si ya usa Homebrew, también sirve `brew install uv`.
+
 En Windows (abrir PowerShell):
 
 ```powershell
@@ -132,8 +134,8 @@ día.
 
 ## Plan alternativo: Google Colab
 
-Si su computador es administrado por su empresa y no permite instalar programas,
-puede seguir el módulo con [Google Colab](https://colab.research.google.com),
+Si no puede o prefiere no instalar programas, puede seguir el módulo con
+[Google Colab](https://colab.research.google.com),
 que ejecuta notebooks en la nube y ya trae NumPy, Pandas y Matplotlib
 instalados. Solo necesita una cuenta de Google. Los notebooks del curso se
 abren con los enlaces del README del repositorio.
