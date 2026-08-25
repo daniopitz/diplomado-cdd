@@ -9,7 +9,8 @@ computador personal. **La revisaremos paso a paso en la primera clase** (martes
 25 de agosto), así que no es necesario hacer nada antes; si quiere adelantarse,
 puede seguirla por su cuenta. Lo importante es llegar a la **clase 2** (jueves 27
 de agosto) **con el entorno funcionando**, porque desde ahí trabajaremos con
-código en todas las clases.
+código en todas las clases. Instalar el entorno local no es obligatorio: también
+puede trabajar en Google Colab (ver el plan alternativo, al final de la guía).
 
 Si algo no funciona, anote el mensaje de error y el paso en que apareció, y
 escríbanos antes de la clase 2. Tendremos ayudantes para resolver este tipo de
@@ -150,10 +151,12 @@ lo que veremos en clase si alguien lo necesita.
 
 ## Antes de la clase 2, en resumen
 
-1. uv instalado (`uv --version` responde).
-2. Repositorio del curso descargado y entorno instalado (`uv sync` terminó
-   sin errores).
-3. La celda de verificación muestra las versiones y la tabla (en VS Code o
-   JupyterLab).
+Llegue a la clase 2 con una de las dos opciones funcionando:
+
+- **Entorno local**: uv instalado (`uv --version` responde), repositorio del
+  curso descargado, entorno creado (`uv sync` terminó sin errores) y la celda
+  de verificación muestra las versiones y la tabla (en VS Code o JupyterLab).
+- **Google Colab**: puede abrir los notebooks con los enlaces del README y
+  guardar su copia en su Google Drive.
 
 Nos vemos el martes 25 de agosto a las 18:00.
