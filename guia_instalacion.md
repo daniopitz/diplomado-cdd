@@ -145,9 +145,36 @@ Importante: los cambios sobre el enlace del curso no quedan guardados. Antes de
 trabajar, guarde su propia copia con `Archivo > Guardar una copia en Drive` y
 organice sus copias en una carpeta del curso en su Google Drive.
 
-Colab sirve perfectamente para las clases; la única diferencia es que los
-archivos de datos hay que subirlos a la sesión o montarlos desde Google Drive,
-lo que veremos en clase si alguien lo necesita.
+Colab sirve perfectamente para las clases: los notebooks del curso leen los
+datos por URL, así que no hay que subir nada.
+
+### Subir datos propios a Colab
+
+Esto se necesita solo al trabajar con datos propios, por ejemplo los del
+proyecto Capstone.
+
+- **Archivos sueltos**: botón de subir del panel de archivos (icono de carpeta,
+  a la izquierda) o arrastrarlos al panel. Se pueden seleccionar varios a la
+  vez. Quedan en `/content/`, el directorio de trabajo del notebook.
+- **Carpetas completas**: el panel no acepta carpetas; comprímala a `.zip`,
+  suba el zip y descomprímalo desde una celda:
+
+  ```python
+  !unzip -q eod_stgo.zip -d .
+  ```
+
+  (en la terminal de Colab, el mismo comando sin el `!`).
+- **Persistencia**: el almacenamiento de la sesión es efímero; si la máquina se
+  recicla, hay que volver a subir. Para datos que deben sobrevivir entre
+  sesiones, suba la carpeta a su Google Drive (el navegador sí acepta arrastrar
+  carpetas a Drive) y móntelo desde una celda:
+
+  ```python
+  from google.colab import drive
+  drive.mount("/content/drive")
+  ```
+
+  Sus archivos quedan en `/content/drive/MyDrive/`.
 
 ## Antes de la clase 2, en resumen
 
