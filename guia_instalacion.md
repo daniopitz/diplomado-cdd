@@ -5,9 +5,9 @@ estadísticos. Universidad Técnica Federico Santa María.
 
 En este módulo trabajaremos con Python, Jupyter y las librerías NumPy, Pandas y
 Matplotlib, entre otras. Esta guía deja todo instalado y funcionando en su
-computador personal. **La revisaremos paso a paso en la primera clase** (martes
-25 de agosto), así que no es necesario hacer nada antes; si quiere adelantarse,
-puede seguirla por su cuenta. Lo importante es llegar a la **clase 2** (jueves 27
+computador personal. Si le es posible, **inténtela antes de la primera clase**
+(martes 25 de agosto); igualmente la revisaremos paso a paso en esa clase.
+Lo importante es llegar a la **clase 2** (jueves 27
 de agosto) **con el entorno funcionando**, porque desde ahí trabajaremos con
 código en todas las clases. Instalar el entorno local no es obligatorio: también
 puede trabajar en Google Colab (ver el plan alternativo, al final de la guía).
