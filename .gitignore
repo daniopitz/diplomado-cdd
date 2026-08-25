@@ -20,3 +20,6 @@ evaluaciones/*
 lecturas/*.pdf
 lecturas/*.epub
 respaldos/
+
+# Plantilla de clase de la profesora (solo local, no se publica)
+01_intro_ecosistema_plantilla.ipynb
