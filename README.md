@@ -8,10 +8,6 @@ Modalidad 100% online sincrónica. Clases los **martes y jueves de 18:00 a 20:30
 desde el martes 25 de agosto al martes 22 de septiembre de 2026. El jueves 17 de
 septiembre no hay clases por ser preferiado; la clase 8 se dicta el martes 22.
 
-Audiencia: profesionales con grado de licenciatura, con conocimientos de nivel
-medio a avanzado en programación en Python y nociones básicas de análisis de
-datos. La asignatura se aprueba con una calificación mínima de 60%.
-
 ## Contenidos del módulo
 
 - Ciencia de datos: historia y fundamentos conceptuales.
