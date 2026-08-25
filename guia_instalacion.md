@@ -11,10 +11,10 @@ puede seguirla por su cuenta. Lo importante es llegar a la **clase 2** (jueves 2
 de agosto) **con el entorno funcionando**, porque desde ahí trabajaremos con
 código en todas las clases.
 
-Si algo no funciona, no se preocupe: anote el mensaje de error y el paso en que
-apareció, y lo revisamos en la clase 1, o escríbanos antes de la clase 2. Al
-final de la guía hay una sección de problemas frecuentes y un plan alternativo en
-la nube por si su computador tiene restricciones de instalación.
+Si algo no funciona, anote el mensaje de error y el paso en que apareció, y
+escríbanos antes de la clase 2. Al final de la guía hay una sección de problemas
+frecuentes y un plan alternativo en la nube por si su computador tiene
+restricciones de instalación.
 
 Tiempo estimado: 15 a 20 minutos, con conexión a internet.
 
