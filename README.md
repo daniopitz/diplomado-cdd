@@ -52,8 +52,8 @@ evalúa con tres actividades asociadas al proyecto Capstone del diplomado:
 | Primer análisis exploratorio de datos: código con NumPy, Pandas y Matplotlib sobre datos del proyecto | RA1.1 | 40% |
 | Informe de avance del proyecto Capstone: comunicación oral y escrita de los primeros hallazgos | RA1.2 | 25% |
 
-El proyecto Capstone se desarrolla en equipos; la conformación se define en la
-primera semana. Calificación mínima de aprobación: 60%. Las fechas de entrega y
+El proyecto Capstone se desarrolla en equipos de máximo dos personas; la
+conformación se define en la primera semana. Calificación mínima de aprobación: 60%. Las fechas de entrega y
 las rúbricas de evaluación se publican durante el módulo.
 
 ### Calendario de evaluaciones (propuesta, por confirmar en el aula virtual)
