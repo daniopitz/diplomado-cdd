@@ -166,16 +166,38 @@ proyecto Capstone.
   (en la terminal de Colab, el mismo comando sin el `!`).
 - **Persistencia**: los archivos subidos viven solo mientras dura la sesión de
   Colab; al cerrarla, o si expira por inactividad, se pierden y hay que
-  subirlos de nuevo. Para datos que deben sobrevivir entre
-  sesiones, suba la carpeta a su Google Drive (el navegador sí acepta arrastrar
-  carpetas a Drive) y móntelo desde una celda:
+  subirlos de nuevo. Para no volver a subirlos cada vez, monte su Google Drive
+  (ver la sección siguiente).
 
-  ```python
-  from google.colab import drive
-  drive.mount("/content/drive")
-  ```
+### Montar Google Drive en Colab
 
-  Sus archivos quedan en `/content/drive/MyDrive/`.
+Montar el Drive conecta su Google Drive a la sesión de Colab, como si fuera una
+carpeta más del computador. Es la opción recomendada para los datos del
+proyecto: se suben una sola vez a Drive y quedan disponibles en cualquier
+sesión futura.
+
+1. Suba la carpeta de datos a su Google Drive en el navegador
+   ([drive.google.com](https://drive.google.com)), por ejemplo a una carpeta
+   `diplomado`. El navegador sí acepta arrastrar carpetas completas a Drive.
+2. En el notebook de Colab, ejecute esta celda y autorice el acceso cuando se
+   lo pida (una vez por sesión):
+
+   ```python
+   from google.colab import drive
+   drive.mount("/content/drive")
+   ```
+
+3. Su Drive queda disponible en `/content/drive/MyDrive/` (que corresponde a
+   "Mi unidad"). Desde ahí se lee con la ruta completa, por ejemplo:
+
+   ```python
+   viajes = pd.read_csv("/content/drive/MyDrive/diplomado/eod_stgo/viajes.csv",
+                        sep=";", decimal=",", low_memory=False)
+   ```
+
+El montaje hay que repetirlo en cada sesión nueva (la autorización es rápida),
+pero los archivos ya no se vuelven a subir. Cuidado al borrar dentro de
+`/content/drive/`: ahí está su Drive real, no una copia.
 
 ## En resumen
 
