@@ -51,7 +51,7 @@ evalúa con tres actividades asociadas al proyecto Capstone del diplomado:
 
 | Actividad | Resultado de aprendizaje | Ponderación |
 |-----------|--------------------------|-------------|
-| Formulación del proyecto Capstone y de la innovación propuesta | RA1.2 | 30% |
+| Formulación del proyecto Capstone | RA1.2 | 30% |
 | Primer análisis exploratorio de datos: código con NumPy, Pandas y Matplotlib sobre datos del proyecto | RA1.1 | 40% |
 | Informe de avance del proyecto Capstone: comunicación oral y escrita de los primeros hallazgos | RA1.2 | 25% |
 
