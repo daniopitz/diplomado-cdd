@@ -164,8 +164,9 @@ proyecto Capstone.
   ```
 
   (en la terminal de Colab, el mismo comando sin el `!`).
-- **Persistencia**: el almacenamiento de la sesión es efímero; si la máquina se
-  recicla, hay que volver a subir. Para datos que deben sobrevivir entre
+- **Persistencia**: los archivos subidos viven solo mientras dura la sesión de
+  Colab; al cerrarla, o si expira por inactividad, se pierden y hay que
+  subirlos de nuevo. Para datos que deben sobrevivir entre
   sesiones, suba la carpeta a su Google Drive (el navegador sí acepta arrastrar
   carpetas a Drive) y móntelo desde una celda:
 
