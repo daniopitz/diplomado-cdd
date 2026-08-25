@@ -34,7 +34,7 @@ ajustarse sobre la marcha según el avance del grupo.
 
 | # | Fecha | Contenidos | Slides | Notebook | Colab |
 |---|-------|------------|--------|----------|-------|
-| 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Tipos de datos y tipos de variables. Ecosistema Python para ciencia de datos: NumPy, Pandas y Matplotlib. Puesta en marcha del entorno con uv y Jupyter | [PDF](presentaciones/clase01_fundamentos_ecosistema.pdf) | [notebook](01_intro_ecosistema.ipynb) · [plantilla](01_intro_ecosistema_plantilla.ipynb) | [abrir en Colab](https://colab.research.google.com/github/daniopitz/diplomado-cdd/blob/main/01_intro_ecosistema_colab.ipynb) · [plantilla](https://colab.research.google.com/github/daniopitz/diplomado-cdd/blob/main/01_intro_ecosistema_plantilla_colab.ipynb) |
+| 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Tipos de datos y tipos de variables. Ecosistema Python para ciencia de datos: NumPy, Pandas y Matplotlib. Puesta en marcha del entorno con uv y Jupyter | [PDF](presentaciones/clase01_fundamentos_ecosistema.pdf) | [notebook](01_intro_ecosistema.ipynb) | [abrir en Colab](https://colab.research.google.com/github/daniopitz/diplomado-cdd/blob/main/01_intro_ecosistema_colab.ipynb) |
 | 2 | ju 27-ago | Estadística descriptiva: medidas de tendencia central, dispersión y forma. Se publica la rúbrica de formulación del proyecto Capstone | | | |
 | 3 | ma 01-sep | Análisis exploratorio de datos (EDA): univariado, bivariado, correlación y visualización con Matplotlib | | | |
 | 4 | ju 03-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones. Presentaciones breves de las ideas de proyecto Capstone | | | |
@@ -84,10 +84,8 @@ publica.
 
 Cada clase tiene dos notebooks equivalentes: uno para el entorno local del curso
 y una versión para Google Colab, que se abre con el enlace "abrir en Colab" de la
-tabla y corre sin instalar nada. En ambos, los datos se leen desde una URL.
-Además hay una **plantilla** de cada notebook, con las instrucciones y las
-celdas de código por completar: es la versión con que se trabaja en vivo durante
-la clase; la versión completa y ejecutada queda como referencia.
+tabla y corre sin instalar nada. En ambos, los datos se leen desde una URL,
+y el código queda completo y ejecutado, como referencia.
 
 Como lectura complementaria de acceso abierto se recomienda el
 [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
