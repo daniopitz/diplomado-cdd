@@ -89,10 +89,6 @@ Además hay una **plantilla** de cada notebook, con las instrucciones y las
 celdas de código por completar: es la versión con que se trabaja en vivo durante
 la clase; la versión completa y ejecutada queda como referencia.
 
-Algunos conjuntos de datos son compartidos con el curso INF-396 de pregrado,
-entre ellos la Encuesta Origen Destino de Santiago 2012 y los registros de
-emisiones al aire (RETC 2020).
-
 Como lectura complementaria de acceso abierto se recomienda el
 [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
 de Jake VanderPlas (versión completa en línea, con notebooks ejecutables en
