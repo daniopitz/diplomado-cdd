@@ -92,3 +92,16 @@ Como lectura complementaria de acceso abierto se recomienda el
 de Jake VanderPlas (versión completa en línea, con notebooks ejecutables en
 Colab): sus capítulos de NumPy, Pandas y Matplotlib acompañan las primeras
 clases, y el de regresión lineal, la clase 7.
+
+## Uso de inteligencia artificial
+
+El material de este módulo (slides, notebooks y guías) fue elaborado por la
+profesora con asistencia de herramientas de IA generativa (Claude, de
+Anthropic), con revisión y verificación de la docente sobre contenidos, código
+y referencias.
+
+Para los estudiantes, el uso de IA generativa (ChatGPT, Claude, Copilot y
+similares) está permitido en las actividades del módulo, con declaración: al
+entregar, indique qué herramienta usó y para qué (una línea basta). Debe
+entender y poder explicar cualquier parte del código y del análisis que
+entregue; en las presentaciones y clases se puede preguntar.
