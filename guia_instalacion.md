@@ -12,9 +12,10 @@ de agosto) **con el entorno funcionando**, porque desde ahí trabajaremos con
 código en todas las clases.
 
 Si algo no funciona, anote el mensaje de error y el paso en que apareció, y
-escríbanos antes de la clase 2. Al final de la guía hay una sección de problemas
-frecuentes y un plan alternativo en la nube por si su computador tiene
-restricciones de instalación.
+escríbanos antes de la clase 2. Tendremos ayudantes para resolver este tipo de
+dudas; pronto publicaremos más información. Al final de la guía hay una sección
+de problemas frecuentes y un plan alternativo en la nube por si su computador
+tiene restricciones de instalación.
 
 Tiempo estimado: 15 a 20 minutos, con conexión a internet.
 
