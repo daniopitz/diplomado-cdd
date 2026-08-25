@@ -35,7 +35,7 @@ ajustarse sobre la marcha según el avance del grupo.
 | 2 | ju 27-ago | Análisis exploratorio de datos I: estadística descriptiva (tendencia central, dispersión y forma) y calidad y limpieza de datos (valores faltantes, duplicados, valores imposibles, revisión de merges) | | | |
 | 3 | ma 01-sep | Análisis exploratorio de datos II: análisis univariado y bivariado, correlación y visualización con Matplotlib | | | |
 | 4 | ju 03-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones. Presentaciones breves de las ideas de proyecto Capstone | | | |
-| 5 | ma 08-sep | Nociones de inferencia estadística: estimación, intervalos de confianza y pruebas de hipótesis | | | |
+| 5 | ma 08-sep | Nociones de inferencia estadística: estimación, intervalos de confianza, pruebas de hipótesis y valor p | | | |
 | 6 | ju 10-sep | Regresión lineal simple y múltiple | | | |
 | 7 | ma 15-sep | Regresión regularizada (Ridge y Lasso) y regresión logística | | | |
 | | ju 17-sep | Sin clases (suspendida por ser preferiado) | | | |
