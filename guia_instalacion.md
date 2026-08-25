@@ -179,7 +179,7 @@ proyecto Capstone.
 
 ## Antes de la clase 2, en resumen
 
-Llegue a la clase 2 con una de las dos opciones funcionando:
+Intente llegar a la clase 2 con una de las dos opciones funcionando:
 
 - **Entorno local**: uv instalado (`uv --version` responde), repositorio del
   curso descargado, entorno creado (`uv sync` terminó sin errores) y la celda
