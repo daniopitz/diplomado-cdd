@@ -5,8 +5,7 @@ datos de su propio trabajo. Es solo una sugerencia: también pueden buscar
 cualquier otro conjunto de datos público que sirva a su proyecto. Los enlaces
 fueron verificados en agosto de 2026.
 
-Todos los enlaces llevan a páginas desde donde los datos se pueden descargar
-(archivos o exportación).
+Todos los enlaces llevan a páginas desde donde los datos se pueden descargar.
 
 ## Datos de Chile
 
