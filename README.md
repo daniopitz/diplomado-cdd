@@ -54,8 +54,8 @@ evalúa con tres actividades asociadas al proyecto Capstone del diplomado:
 
 El proyecto Capstone se desarrolla en equipos de máximo dos personas; la
 conformación se define en la primera semana. El proyecto puede usar cualquier
-conjunto de datos, propio o público; hay una
-[lista de datos sugeridos](datasets_proyecto.md). Calificación mínima de
+conjunto de datos, propio o público; hay
+[ideas de datos](datasets_proyecto.md) en el repositorio. Calificación mínima de
 aprobación: 60%. Las fechas de entrega y las rúbricas de evaluación se
 publican durante el módulo.
 
