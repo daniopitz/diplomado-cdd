@@ -27,3 +27,8 @@ guia_instalacion.pdf
 
 # Soluciones de la profesora (no se publican, al menos por ahora)
 soluciones/
+
+# Generadores de notebooks y plantillas de clase (material de trabajo local)
+generadores/
+0*_plantilla.ipynb
+datasets_proyecto.pdf
