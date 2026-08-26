@@ -6,9 +6,10 @@ Visualización de Información de Eduardo Graells-Garrido
 ([datagramas.cl](https://datagramas.cl/courses/infovis/resources/)), con los
 enlaces actualizados y verificados en agosto de 2026.
 
-Antes de elegir, recuerde el criterio de la formulación: los datos deben poder
-responder la pregunta de su proyecto, y usted debe poder describir sus
-variables y su procedencia.
+Todos los enlaces llevan a páginas desde donde los datos se pueden descargar
+(archivos o exportación). Antes de elegir, recuerde el criterio de la
+formulación: los datos deben poder responder la pregunta de su proyecto, y
+usted debe poder describir sus variables y su procedencia.
 
 ## Datos de Chile
 
@@ -21,9 +22,9 @@ variables y su procedencia.
   denuncias y detenciones por delito, comuna y periodo.
 - [Estadísticas migratorias, Servicio Nacional de Migraciones](https://serviciomigraciones.cl/estudios-migratorios/estadisticas-migratorias/):
   residencias, visas y flujos migratorios.
-- [Censo de Población y Vivienda, INE](https://www.ine.gob.cl/estadisticas/sociales/censos-de-poblacion-y-vivienda/censo-de-poblacion-y-vivienda):
-  microdatos y documentación censal; el
-  [Censo 2024](https://censo2024.ine.gob.cl/) tiene su propio portal.
+- [Portal de microdatos del INE](https://www.ine.gob.cl/herramientas/portal-de-microdatos):
+  descarga de microdatos de censos y encuestas del INE (Censo, ENE, EPF,
+  entre otras).
 - [Guaguas](https://github.com/rivaquiroga/guaguas/): nombres inscritos en el
   Registro Civil de Chile, 1920 a 2021.
 - [Asesorías externas de la Cámara de Diputadas y Diputados](https://github.com/rivaquiroga/asesorias-externas-camara):
@@ -53,8 +54,6 @@ variables y su procedencia.
   infraestructura) para análisis de grafos.
 - [Foursquare Datasets](https://sites.google.com/site/yangdingqi/home/foursquare-dataset):
   check-ins georreferenciados en ciudades.
-- [Gender Equity Index, Social Watch](http://www.socialwatch.org/node/14367):
-  índice de equidad de género por país.
 
 ## En Kaggle
 
