@@ -32,7 +32,7 @@ ajustarse sobre la marcha según el avance del grupo.
 | # | Fecha | Contenidos | Slides | Notebook | Colab |
 |---|-------|------------|--------|----------|-------|
 | 1 | ma 25-ago | Ciencia de datos: historia y fundamentos conceptuales. Ciclo de vida de proyectos. Tipos de datos y tipos de variables. Ecosistema Python para ciencia de datos: NumPy, Pandas y Matplotlib. Puesta en marcha del entorno con uv y Jupyter | [PDF](presentaciones/clase01_fundamentos_ecosistema.pdf) | [notebook](01_intro_ecosistema.ipynb) | [abrir en Colab](https://colab.research.google.com/github/daniopitz/diplomado-cdd/blob/main/01_intro_ecosistema_colab.ipynb) |
-| 2 | ju 27-ago | Análisis exploratorio de datos I: estadística descriptiva (tendencia central, dispersión y forma) y calidad y limpieza de datos (valores faltantes, duplicados, valores imposibles, revisión de merges) | | | |
+| 2 | ju 27-ago | Análisis exploratorio de datos I: estadística descriptiva (tendencia central, dispersión y forma) y calidad y limpieza de datos (valores faltantes, duplicados, valores imposibles, revisión de merges) | [PDF](presentaciones/clase02_eda_descriptiva.pdf) | [notebook](02_eda_descriptiva.ipynb) | [abrir en Colab](https://colab.research.google.com/github/daniopitz/diplomado-cdd/blob/main/02_eda_descriptiva_colab.ipynb) |
 | 3 | ma 01-sep | Análisis exploratorio de datos II: análisis univariado y bivariado, correlación y visualización con Matplotlib | | | |
 | 4 | ju 03-sep | Fundamentos de probabilidad: variables aleatorias y distribuciones. Presentaciones breves de las ideas de proyecto Capstone | | | |
 | 5 | ma 08-sep | Nociones de inferencia estadística: estimación, intervalos de confianza, pruebas de hipótesis y valor p | | | |
