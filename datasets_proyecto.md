@@ -29,6 +29,9 @@ usted debe poder describir sus variables y su procedencia.
   Registro Civil de Chile, 1920 a 2021.
 - [Asesorías externas de la Cámara de Diputadas y Diputados](https://github.com/rivaquiroga/asesorias-externas-camara):
   gasto en asesorías 2018 a 2022.
+- [Matrices de viaje del transporte público, DTPM](https://www.dtpm.cl/index.php/documentos/matrices-de-viaje):
+  viajes en el sistema de Santiago estimados desde las validaciones de la
+  tarjeta bip!, descargables por periodo.
 - [Catastro de Campamentos 2024, MINVU](https://ide.minvu.cl/datasets/MINVU::actualizacion-catastro-campamentos-2024-1/explore):
   asentamientos informales del país con hogares estimados, descargable en CSV
   y formatos geográficos; TECHO-Chile publica su propio
