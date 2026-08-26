@@ -1,7 +1,9 @@
 # Ideas de datos para el proyecto Capstone
 
 Lista de conjuntos de datos públicos para quienes no quieran o no puedan usar
-datos de su propio trabajo. Los enlaces fueron verificados en agosto de 2026.
+datos de su propio trabajo. Es solo una sugerencia: también pueden buscar
+cualquier otro conjunto de datos público que sirva a su proyecto. Los enlaces
+fueron verificados en agosto de 2026.
 
 Todos los enlaces llevan a páginas desde donde los datos se pueden descargar
 (archivos o exportación). Antes de elegir, recuerde el criterio de la
