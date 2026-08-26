@@ -1,9 +1,8 @@
 # Ideas de datos para el proyecto Capstone
 
-Lista de conjuntos de datos públicos para quienes no quieran o no puedan usar
-datos de su propio trabajo. Es solo una sugerencia: también pueden buscar
-cualquier otro conjunto de datos público que sirva a su proyecto. Los enlaces
-fueron verificados en agosto de 2026.
+Lista de conjuntos de datos públicos sugeridos para el proyecto Capstone. Es
+solo una sugerencia: también pueden buscar cualquier otro conjunto de datos
+que sirva a su proyecto. Los enlaces fueron verificados en agosto de 2026.
 
 Todos los enlaces llevan a páginas desde donde los datos se pueden descargar.
 
@@ -60,6 +59,18 @@ Todos los enlaces llevan a páginas desde donde los datos se pueden descargar.
   infraestructura) para análisis de grafos.
 - [Foursquare Datasets](https://sites.google.com/site/yangdingqi/home/foursquare-dataset):
   check-ins georreferenciados en ciudades.
+
+## Redes sociales
+
+- [Twitter Stream Grab, Internet Archive](https://archive.org/details/twitterstream):
+  muestras históricas del flujo público de Twitter (hasta 2023), multilingües,
+  en JSON; archivos grandes. Desde el cierre de la API de X no hay datos
+  actuales de libre acceso.
+- [Sentiment140](https://www.kaggle.com/datasets/kazanova/sentiment140):
+  1,6 millones de tweets en inglés etiquetados por sentimiento; el clásico
+  para análisis de texto.
+- [Tweets en español sobre inteligencia artificial](https://zenodo.org/records/10821485):
+  4.038 tweets en español, CSV con licencia CC BY.
 
 ## En Kaggle
 

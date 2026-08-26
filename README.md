@@ -53,9 +53,11 @@ evalúa con tres actividades asociadas al proyecto Capstone del diplomado:
 | Informe de avance del proyecto Capstone: comunicación oral y escrita de los primeros hallazgos | RA1.2 | 25% |
 
 El proyecto Capstone se desarrolla en equipos de máximo dos personas; la
-conformación se define en la primera semana. Quienes no usen datos de su propio
-trabajo pueden elegir de la [lista de datos sugeridos](datasets_proyecto.md). Calificación mínima de aprobación: 60%. Las fechas de entrega y
-las rúbricas de evaluación se publican durante el módulo.
+conformación se define en la primera semana. El proyecto puede usar cualquier
+conjunto de datos, propio o público; hay una
+[lista de datos sugeridos](datasets_proyecto.md). Calificación mínima de
+aprobación: 60%. Las fechas de entrega y las rúbricas de evaluación se
+publican durante el módulo.
 
 ### Calendario de evaluaciones (propuesta, por confirmar en el aula virtual)
 
