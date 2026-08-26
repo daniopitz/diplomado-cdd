@@ -32,7 +32,7 @@ Todos los enlaces llevan a páginas desde donde los datos se pueden descargar.
   y formatos geográficos; TECHO-Chile publica su propio
   [catastro](https://cl.techo.org/ces-catastros/).
 - Reportes de la aplicación SOSAFE: reportes ciudadanos de incidentes de
-  seguridad. No son de descarga pública: consultar a la profesora Daniela
+  seguridad. No tienen descarga pública: preguntar a la profesora Daniela
   Opitz.
 - [Mapas vectoriales, BCN](https://www.bcn.cl/siit/mapas_vectoriales/index_html):
   límites administrativos de Chile en formato shapefile.
