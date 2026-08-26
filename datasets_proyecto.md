@@ -1,10 +1,7 @@
 # Ideas de datos para el proyecto Capstone
 
 Lista de conjuntos de datos públicos para quienes no quieran o no puedan usar
-datos de su propio trabajo. Está basada en los recursos del curso de
-Visualización de Información de Eduardo Graells-Garrido
-([datagramas.cl](https://datagramas.cl/courses/infovis/resources/)), con los
-enlaces actualizados y verificados en agosto de 2026.
+datos de su propio trabajo. Los enlaces fueron verificados en agosto de 2026.
 
 Todos los enlaces llevan a páginas desde donde los datos se pueden descargar
 (archivos o exportación). Antes de elegir, recuerde el criterio de la
