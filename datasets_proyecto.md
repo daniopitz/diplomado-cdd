@@ -1,8 +1,8 @@
 # Ideas de datos para el proyecto Capstone
 
-Ideas de conjuntos de datos públicos para el proyecto Capstone. Son solo
-ideas: también pueden buscar cualquier otro conjunto de datos que sirva a su
-proyecto. Los enlaces fueron verificados en agosto de 2026.
+Listado de posibles conjuntos de datos para el proyecto Capstone. El proyecto
+puede usar cualquier conjunto de datos que sirva a su pregunta. Los enlaces
+fueron verificados en agosto de 2026.
 
 Todos los enlaces llevan a páginas desde donde los datos se pueden descargar.
 
