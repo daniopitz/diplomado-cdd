@@ -16,8 +16,8 @@ semana cuesta mucho menos que hacerlo con el proyecto avanzado.
 
 - **Entre 5 y 7 minutos** por equipo. Al terminar, el curso y la profesora
   pueden hacer preguntas y comentarios.
-- Se recomienda apoyarse en una **presentación simple** (pocas láminas, sin
-  producción). No es obligatoria, pero conviene: las mismas láminas sirven de
+- Se recomienda apoyarse en una **presentación simple** (pocas slides, sin
+  producción). No es obligatoria, pero conviene: las mismas slides sirven de
   base para ordenar la entrega del lunes.
 
 ## Esquema sugerido de la presentación
