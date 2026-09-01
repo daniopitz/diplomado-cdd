@@ -63,7 +63,7 @@ publican durante el módulo.
 
 | Actividad | Entrega | Rúbrica disponible | Presentación |
 |-----------|---------|--------------------|--------------|
-| [Formulación del proyecto Capstone](evaluaciones/formulacion_capstone.md) (30%) | **lu 07-sep** | [publicada](evaluaciones/rubricas/rubrica_formulacion_capstone.md) (ju 27-ago, clase 2) | idea de cada equipo: ju 03-sep (clase 4) |
+| [Formulación del proyecto Capstone](evaluaciones/formulacion_capstone.md) (30%) | **lu 07-sep** | [publicada](evaluaciones/rubricas/rubrica_formulacion_capstone.md) (ju 27-ago, clase 2) | [idea de cada equipo: ju 03-sep, clase 4](evaluaciones/presentacion_idea_capstone.md) |
 | Primer análisis exploratorio de datos (40%) | **lu 15-sep** | ju 03-sep (clase 4) | |
 | Informe de avance del proyecto (25%) | **vi 25-sep** (informe escrito) | por definir | oral: ma 22-sep (clase 8) |
 
