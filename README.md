@@ -64,7 +64,7 @@ publican durante el módulo.
 | Actividad | Entrega | Rúbrica disponible | Presentación |
 |-----------|---------|--------------------|--------------|
 | [Formulación del proyecto Capstone](evaluaciones/formulacion_capstone.md) (30%) | **lu 07-sep** | [publicada](evaluaciones/rubricas/rubrica_formulacion_capstone.md) (ju 27-ago, clase 2) | [idea de cada equipo: ju 03-sep, clase 4](evaluaciones/presentacion_idea_capstone.md) ([PDF](evaluaciones/presentacion_idea_capstone.pdf)) |
-| Primer análisis exploratorio de datos (40%) | **lu 15-sep** | ju 03-sep (clase 4) | |
+| [Primer análisis exploratorio de datos](evaluaciones/eda_capstone.md) (40%) | **lu 15-sep** | [publicada](evaluaciones/rubricas/rubrica_eda_capstone.md) (mié 02-sep) | |
 | Informe de avance del proyecto (25%) | **vi 25-sep** (informe escrito) | por definir | oral: ma 22-sep (clase 8) |
 
 Los talleres de ecosistema Python que el programa asigna a las semanas 2 y 3 se

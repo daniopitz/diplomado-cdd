@@ -44,14 +44,11 @@ o público; hay [ideas de datos](../datasets_proyecto.md) en el repositorio.
 
 ## La presentación de la idea
 
-El jueves 3 de septiembre cada equipo presenta su idea en la clase, en
-alrededor de 5 minutos. Es una instancia formativa: no lleva nota, y su
-propósito es recibir retroalimentación para corregir la formulación antes de
-entregarla.
-
-La presentación debe cubrir tres puntos: el problema y la pregunta, los datos
-que se usarían y qué aportaría el proyecto. Pueden apoyarse en un máximo de 3
-láminas, o presentar sin apoyo visual.
+El jueves 3 de septiembre cada equipo presenta su idea en la clase, de 5 a 7
+minutos. Es una instancia formativa: no lleva nota, y su propósito es recibir
+retroalimentación para corregir la formulación antes de entregarla. El detalle
+del formato y el esquema sugerido están en la
+[pauta de la presentación](presentacion_idea_capstone.md).
 
 ## Uso de inteligencia artificial
 
