@@ -42,9 +42,11 @@ relacionar o revisar, y por qué.
    de correlación si hay varias cuantitativas, y grupos o tablas de
    contingencia si hay categóricas. Interprete lo que los datos muestran, no
    más que eso.
-4. **Visualización.** Gráficos rotulados (ejes con nombre y unidad) y con el
-   hallazgo en el título; el overplotting y las colas largas se tratan cuando
-   aparecen (transparencia, hexbin, escala logarítmica).
+4. **Visualización.** Al menos tres gráficos de tipos distintos, elegidos
+   según la variable y la pregunta (histograma, boxplot, dispersión, barras,
+   línea de tendencia u otros). Todos rotulados (ejes con nombre y unidad) y
+   con el hallazgo en el título; el overplotting y las colas largas se tratan
+   cuando aparecen (transparencia, hexbin, escala logarítmica).
 5. **Hallazgos y siguientes pasos.** De 3 a 5 hallazgos escritos en frases
    completas, y qué modelo imaginan ajustar en el avance del proyecto.
 
