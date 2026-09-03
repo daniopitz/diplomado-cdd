@@ -17,6 +17,9 @@ de empezar.
   Pandas y Matplotlib, por el aula virtual. Si los datos no se pueden adjuntar
   (por tamaño o confidencialidad), el notebook debe indicar cómo obtenerlos o
   incluir una muestra que permita ejecutarlo.
+- NumPy, Pandas y Matplotlib son la base que pide el programa, no un límite:
+  se pueden usar además otras bibliotecas de ciencia de datos (seaborn, SciPy
+  y similares), sin penalización.
 - Fecha de entrega: lunes 15 de septiembre de 2026.
 
 ## Qué debe contener el notebook

@@ -24,7 +24,7 @@ tabla; el [enunciado](../eda_capstone.md) detalla qué va en cada sección.
 | 2. Estadística descriptiva | Centro, dispersión y forma de las variables relevantes, interpretados en el contexto del problema; usa los pesos o factores de expansión cuando los datos los traen (17 a 20 pts) | Resúmenes calculados pero poco interpretados, o resúmenes sensibles (media, desviación) donde los robustos correspondían (9 a 16 pts) | Resúmenes ausentes o sin relación con la pregunta del proyecto (0 a 8 pts) | 20 |
 | 3. Análisis bivariado | Cada análisis declara su objetivo; correlaciones bien elegidas (Pearson y Spearman) e interpretadas por lo que los datos muestran; matriz, grupos o tablas de contingencia según los tipos de variables, apuntando a la pregunta del proyecto (21 a 25 pts) | Relaciones calculadas pero sin objetivo declarado, o con interpretaciones que van más allá de lo que los datos muestran (11 a 20 pts) | Sin análisis de relaciones, o relaciones ajenas a la pregunta (0 a 10 pts) | 25 |
 | 4. Visualización | Gráficos rotulados con nombre y unidad en los ejes y el hallazgo en el título; overplotting y colas largas tratados cuando aparecen; cada gráfico se interpreta por lo que muestra (17 a 20 pts) | Gráficos correctos pero con rótulos incompletos o sin interpretación; saturación o colas largas sin tratar (9 a 16 pts) | Gráficos ilegibles, sin rótulos o ausentes (0 a 8 pts) | 20 |
-| 5. Hallazgos, código y reproducibilidad | El notebook corre de principio a fin; código legible con NumPy, Pandas y Matplotlib; cierra con 3 a 5 hallazgos en frases completas y el modelo que se imagina ajustar (13 a 15 pts) | Corre con ajustes menores, o los hallazgos son una lista de números sin lectura (7 a 12 pts) | El notebook no corre, o no hay síntesis de hallazgos (0 a 6 pts) | 15 |
+| 5. Hallazgos, código y reproducibilidad | El notebook corre de principio a fin; código legible sobre el ecosistema Python (NumPy, Pandas y Matplotlib como base); cierra con 3 a 5 hallazgos en frases completas y el modelo que se imagina ajustar (13 a 15 pts) | Corre con ajustes menores, o los hallazgos son una lista de números sin lectura (7 a 12 pts) | El notebook no corre, o no hay síntesis de hallazgos (0 a 6 pts) | 15 |
 
 Puntaje total: 100 puntos. La nota se calcula de forma lineal sobre el puntaje;
 la calificación mínima de aprobación del módulo es 60%.
@@ -32,6 +32,10 @@ la calificación mínima de aprobación del módulo es 60%.
 Sobre la ponderación: si sus datos traen factores de expansión o pesos de
 muestreo, los análisis que hablen de la población deben usarlos, como se
 trabajó en las clases 2 a 4. Si no los traen, no corresponde inventarlos.
+
+Sobre las bibliotecas: NumPy, Pandas y Matplotlib son la base que pide el
+programa, no un límite. Usar otras bibliotecas de ciencia de datos (seaborn,
+SciPy y similares) es válido y no se penaliza.
 
 ## Uso de inteligencia artificial
 
