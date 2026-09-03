@@ -45,9 +45,8 @@ relacionar o revisar, y por qué.
 4. **Visualización.** Al menos tres gráficos de tipos distintos, elegidos
    según la variable y la pregunta (histograma, boxplot, dispersión, barras,
    línea de tendencia u otros). Todo gráfico lleva título y ejes nombrados
-   con claridad, con sus unidades; idealmente el título dice el hallazgo, no
-   solo las variables. El overplotting y las colas largas se tratan cuando
-   aparecen (transparencia, hexbin, escala logarítmica).
+   con claridad, con sus unidades. El overplotting y las colas largas se
+   tratan cuando aparecen (transparencia, hexbin, escala logarítmica).
 5. **Hallazgos y siguientes pasos.** De 3 a 5 hallazgos escritos en frases
    completas, y qué modelo imaginan ajustar en el avance del proyecto.
 
