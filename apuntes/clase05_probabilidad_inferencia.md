@@ -172,9 +172,20 @@ fórmula es instantánea, pero existe solo para algunos estadísticos y supone
 cosas sobre los residuos; el bootstrap sirve para cualquier estadístico y solo
 pide que la muestra represente a la población.
 
-## Etapa 5. Segundo uso del error estándar: el contraste (slides 34 a 44)
+**¿Cuándo bootstrap y cuándo la fórmula?** (slide 34). La fórmula, con su t,
+sirve para medias y coeficientes de una regresión bien planteada, con errores
+independientes y varianza pareja: es exacta, instantánea y viene en el summary.
+El bootstrap sirve cuando no hay fórmula para ese estadístico (una mediana, un
+percentil, una razón, un R², la métrica de un modelo) o cuando los supuestos
+fallan (colas largas con pocos datos, varianza que cambia, un estimador que no
+es un promedio): no supone campana, lee el histograma de remuestras. Ninguno
+arregla una muestra sesgada ni filas que no son independientes. Cuando se
+pueden hacer los dos, conviene hacerlos: si coinciden, los supuestos de la
+fórmula están bien.
 
-**Qué tiene que ver el valor p con la regresión** (slide 35). La recta resume
+## Etapa 5. Segundo uso del error estándar: el contraste (slides 35 a 45)
+
+**Qué tiene que ver el valor p con la regresión** (slide 36). La recta resume
 45 puntos, y esos puntos son una muestra. Imaginemos el mundo donde no hay
 relación entre ingreso y duración: la pendiente real es 0. Incluso en ese
 mundo, por el azar de qué hogares cayeron en la encuesta, la recta ajustada
@@ -189,19 +200,19 @@ relación probablemente es real. Si p hubiera dado 0,40, el azar produciría
 pendientes así el 40% de las veces y no podríamos distinguir la recta del
 ruido; no habría evidencia, que no es lo mismo que no exista.
 
-La slide 36 muestra la misma campana en dos posiciones. Centrada en lo
+La slide 37 muestra la misma campana en dos posiciones. Centrada en lo
 observado, −4,8, responde cuánto se mueve nuestra pendiente y da el
 intervalo. Centrada en 0, responde qué haría el azar si no hubiera relación y
 da la prueba; más allá de ±4,1 está la zona donde se rechaza la hipótesis
 nula. Que el intervalo no toque el 0 y que −4,8 caiga en la zona de rechazo
 es la misma afirmación.
 
-Con nombres (slide 37): la **hipótesis nula** H0 es que la pendiente real es
+Con nombres (slide 38): la **hipótesis nula** H0 es que la pendiente real es
 0, el ingreso no tiene efecto; la **alternativa** H1, que no lo es. El
 estadístico es t = b / EE(b), la pendiente dividida por su error estándar, es
-decir, a cuántos errores estándar del cero está: −4,81 / 2,02 = −2,39 (slide 38). El valor p es la probabilidad, si
+decir, a cuántos errores estándar del cero está: −4,81 / 2,02 = −2,39 (slide 39). El valor p es la probabilidad, si
 H0 fuera cierta, de un t así de lejos de cero por cualquiera de los dos lados.
-La convención es rechazar H0 cuando p < 0,05. El cálculo (slide 39):
+La convención es rechazar H0 cuando p < 0,05. El cálculo (slide 40):
 
     p = 2 · (1 − F(|t|))
 
@@ -212,8 +223,8 @@ la normal con un margen extra, porque σ se estimó con s a partir de pocos
 datos; con 45 comunas el 1,96 se vuelve 2,02, y con muchos datos vuelve a ser
 la normal. statsmodels la usa sola.
 
-Con eso el summary se lee completo (slide 40): coef, std err, t, P>|t| y el
-intervalo. La respuesta a la pregunta de la clase (slide 41): la pendiente
+Con eso el summary se lee completo (slide 41): coef, std err, t, P>|t| y el
+intervalo. La respuesta a la pregunta de la clase (slide 42): la pendiente
 que nos dio el modelo no es azar. En las comunas de mayor ingreso los viajes
 duran menos, unos 4,8 minutos menos por cada millón de pesos de ingreso medio,
 entre 0,75 y 8,9. Tres advertencias: con 45 comunas el resultado apenas cruza
@@ -236,7 +247,7 @@ variables.
    no explica no depende de x; no hay una variable omitida que se mueva junto
    con x. Si falla, el coeficiente atribuye a x lo que es de otra cosa. Es la
    razón de fondo de "correlación no es causalidad".
-3. **Errores independientes entre filas** (slide 42): cada fila aporta
+3. **Errores independientes entre filas** (slide 43): cada fila aporta
    información propia. Un ejemplo: en una regresión del gasto del hogar sobre
    el ingreso con 100 personas, si 50 son parejas de la misma casa, comparten
    ingreso, gasto y residuo; hay 100 filas pero 50 residuos independientes, y
@@ -244,12 +255,12 @@ variables.
    repetidas dos veces no hay información nueva, pero el error estándar de la
    pendiente baja de 2,02 a 1,41. Si falla, el error estándar sale demasiado
    chico y los t y los valores p quedan inflados.
-4. **Varianza constante de los errores** (slide 43): la dispersión alrededor de
+4. **Varianza constante de los errores** (slide 44): la dispersión alrededor de
    la recta es la misma en todo el rango de x. En el modelo duración contra
    distancia crece de 17 a 45 minutos con la distancia; en log cambia mucho
    menos, otra razón del log de la clase 4. Si falla, el error estándar queda
    mal calculado.
-5. **Errores normales** (slide 44): solo se necesita para que t y p sean
+5. **Errores normales** (slide 45): solo se necesita para que t y p sean
    exactos con pocos datos, como las 45 comunas, donde conviene mirar el
    histograma de residuos y los atípicos. Con 18 mil hogares deja de importar:
    los residuos del modelo de motorización no son normales y su pendiente
@@ -258,7 +269,7 @@ variables.
    combinación exacta de otras; si lo fuera, los coeficientes no se podrían
    separar.
 
-## Por qué esto importa en ciencia de datos (slide 45)
+## Por qué esto importa en ciencia de datos (slide 46)
 
 Todo lo que entrega un modelo sale de una muestra: sus coeficientes, sus
 predicciones y las métricas con que se evalúa. Con otra muestra, todo eso
