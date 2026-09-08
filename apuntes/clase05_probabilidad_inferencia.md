@@ -262,11 +262,15 @@ variables.
    la describe y el error estándar queda mal calculado. En el modelo duración
    contra distancia, s crece de 17 a 45 minutos con la distancia; en log
    cambia mucho menos, otra razón del log de la clase 4.
-5. **Errores normales** (slide 45): solo se necesita para que t y p sean
-   exactos con pocos datos, como las 45 comunas, donde conviene mirar el
-   histograma de residuos y los atípicos. Con 18 mil hogares deja de importar:
-   los residuos del modelo de motorización no son normales y su pendiente
-   igual se reparte como una normal, por el teorema central del límite.
+5. **Errores normales** (slide 45): lo que los t y p necesitan es que la
+   pendiente se reparta como una normal, no los residuos. Con pocos datos, como
+   las 45 comunas, la pendiente hereda la forma de los residuos, así que hay
+   que mirar su histograma y los atípicos. Con muchos datos la pendiente es
+   normal de todos modos, por el teorema central del límite (es un promedio),
+   aunque los residuos no lo sean: los del modelo de motorización con 18 mil
+   hogares no son normales, y no lo serían con más datos, porque su forma la
+   dan los datos. El supuesto deja de necesitarse, no de cumplirse. Los otros
+   dos supuestos no se arreglan con más datos.
 6. **Sin colinealidad perfecta**, en la regresión múltiple: ninguna variable es
    combinación exacta de otras; si lo fuera, los coeficientes no se podrían
    separar.
