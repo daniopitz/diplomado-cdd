@@ -277,8 +277,7 @@ de sacar una fila, la regresión ponderada y los atípicos); sección 3, la mism
 regresión en tres escalas; sección 4, la regresión múltiple con dummies y el
 R² ajustado; sección 5, la media de una muestra y el error estándar; sección
 6, el bootstrap de la pendiente y el std err del summary; sección 7, la prueba
-de hipótesis, t y p a mano y los supuestos; sección 8, el ejercicio con los
-datos de su proyecto.
+de hipótesis, t y p a mano y los supuestos.
 
 ## Glosario
 
