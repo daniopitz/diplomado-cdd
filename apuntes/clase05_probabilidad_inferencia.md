@@ -272,12 +272,11 @@ controlar ese movimiento.
 ## Para practicar con el notebook
 
 El notebook de la clase parte por lo que quedó pendiente de la clase 4 y
-luego practica lo de estas slides: sección 2, la regresión simple de la
-motorización, ponderada por el factor; sección 3, la misma
-regresión en tres escalas; sección 4, la regresión múltiple con dummies y el
-R² ajustado; sección 5, la media de una muestra y el error estándar; sección
-6, el bootstrap de la pendiente y el std err del summary; sección 7, la prueba
-de hipótesis, t y p a mano y los supuestos.
+cierra con el bootstrap: sección 2, la regresión simple de la motorización,
+ponderada por el factor; sección 3, la misma regresión en tres escalas;
+sección 4, la regresión múltiple de la duración con distancia y modo, con las
+dummies, el R², el valor p y el R² ajustado; sección 5, el bootstrap de la
+pendiente y el std err del summary.
 
 ## Glosario
 
