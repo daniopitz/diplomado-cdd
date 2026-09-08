@@ -212,7 +212,9 @@ Con nombres (slides 38 y 39, la segunda con un gráfico por paso): la **hipótes
 estadístico es t = b / EE(b), la pendiente dividida por su error estándar, es
 decir, a cuántos errores estándar del cero está: −4,81 / 2,02 = −2,39 (slide 40). El valor p es la probabilidad, si
 H0 fuera cierta, de un t así de lejos de cero por cualquiera de los dos lados.
-La convención es rechazar H0 cuando p < 0,05. El cálculo (slide 41):
+Ojo con la lectura: p no es la probabilidad de que la pendiente real sea 0.
+Es la probabilidad de los datos si H0 fuera cierta, no la probabilidad de que
+H0 sea cierta (slide 39). La convención es rechazar H0 cuando p < 0,05. El cálculo (slide 41):
 
     p = 2 · (1 − F(|t|))
 
