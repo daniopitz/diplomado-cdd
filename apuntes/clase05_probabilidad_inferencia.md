@@ -272,8 +272,8 @@ controlar ese movimiento.
 ## Para practicar con el notebook
 
 El notebook de la clase parte por lo que quedó pendiente de la clase 4 y
-luego practica lo de estas slides: sección 2, la regresión simple (el impacto
-de sacar una fila, la regresión ponderada y los atípicos); sección 3, la misma
+luego practica lo de estas slides: sección 2, la regresión simple de la
+motorización, ponderada y con sus atípicos; sección 3, la misma
 regresión en tres escalas; sección 4, la regresión múltiple con dummies y el
 R² ajustado; sección 5, la media de una muestra y el error estándar; sección
 6, el bootstrap de la pendiente y el std err del summary; sección 7, la prueba
