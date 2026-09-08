@@ -222,20 +222,22 @@ muestra; que un efecto sea estadísticamente significativo no dice que sea
 grande, el tamaño lo da el coeficiente y su precisión el intervalo; y
 correlación no es causalidad, tampoco con p pequeño.
 
-**Lo que suponen esos t y p** (slides 42 a 44). No que las variables sean
-normales. Los supuestos son sobre los residuos:
+**Los supuestos de OLS** (slides 42 a 44). Los t y p de la regresión por
+mínimos cuadrados son válidos bajo tres supuestos sobre los errores, lo que la
+recta no explica. No se supone que las variables sean normales:
 
-1. **Independientes**: cada fila aporta información propia. Un ejemplo: en
-   una encuesta del ingreso del hogar a 100 personas, si 50 son parejas de la
-   misma casa, hay 100 filas pero 50 informaciones, y el modelo cuenta 100.
+1. **Errores independientes entre filas**. Un ejemplo: en una regresión del
+   gasto del hogar sobre el ingreso con 100 personas, si 50 son parejas de
+   la misma casa, comparten ingreso, gasto y residuo: hay 100 filas pero 50
+   residuos independientes, y OLS cuenta 100.
    El efecto se ve al repetir una tabla: con las 45 comunas repetidas dos
    veces no hay información nueva, pero el error estándar de la pendiente baja
    de 2,02 a 1,41. Con filas que se repiten, el error estándar sale demasiado
    chico y los t y los valores p quedan inflados.
-2. **Misma varianza en todo el rango**: la dispersión de los residuos del
+2. **Varianza constante en todo el rango**: la dispersión de los residuos del
    modelo duración contra distancia crece de 17 a 45 minutos con la distancia;
    en log cambia mucho menos. Otra razón del log de la clase 4.
-3. **Normales**: importa con pocos datos, como las 45 comunas, donde conviene
+3. **Errores normales**: importa con pocos datos, como las 45 comunas, donde conviene
    mirar el histograma de residuos y los atípicos. Con 18 mil hogares deja de
    importar: los residuos del modelo de motorización no son normales y su
    pendiente igual se reparte como una normal, por el teorema central del
