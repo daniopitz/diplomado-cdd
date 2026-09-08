@@ -67,8 +67,8 @@ Para ver el movimiento, la clase trata los 113.113 viajes de la EOD como si
 fueran la población y saca muestras de 100 viajes muchas veces. Dos muestras
 dan dos medias distintas (slide 12). Dos mil muestras dan un histograma de
 medias: la **distribución muestral** de la media, centrada en la media real
-(slide 13). Su desviación estándar se llama **error estándar**: cuánto se
-mueve la media de una muestra a otra.
+(slide 13). Su desviación estándar se llama **error estándar**, que en las
+fórmulas se abrevia EE: cuánto se mueve la media de una muestra a otra.
 
 Dos cosas se confunden porque tienen el mismo nombre (slide 14):
 
@@ -83,8 +83,8 @@ muestra. La fórmula da el mismo número desde ella (slide 15):
 
     EE(x̄) = σ / √n ≈ s / √n
 
-donde x̄ es la media de la muestra, σ la desviación estándar de la duración en
-la población, s la misma desviación estándar pero calculada en la única
+donde EE(x̄) es el error estándar de la media, x̄ es la media de la muestra, σ
+la desviación estándar de la duración en la población, s la misma desviación estándar pero calculada en la única
 muestra que se tiene, y n el tamaño de la muestra. Con n = 100: 36,0 / 10 =
 3,6 por la fórmula con σ, y 35,1 / 10 = 3,5 con la s de una muestra. La
 decisión de reemplazar σ por s tiene una consecuencia pequeña que aparece en
@@ -156,8 +156,8 @@ fórmula, a partir de los residuos (slides 30 y 31):
 
     EE(b) = s / √Σ(xᵢ − x̄)²,   con   s = √(Σeᵢ² / (n − 2))
 
-donde eᵢ es el residuo de la comuna i (su distancia vertical a la recta), s es
-la desviación de esos residuos y reemplaza a σ, la desviación de los errores
+donde EE(b) es el error estándar de la pendiente, eᵢ es el residuo de la
+comuna i (su distancia vertical a la recta), s es la desviación de esos residuos y reemplaza a σ, la desviación de los errores
 alrededor de la recta verdadera, que no se conoce; xᵢ − x̄ es cuánto se aleja
 el ingreso medio de cada comuna del ingreso medio de todas, y n − 2 son las 45
 comunas menos los dos parámetros de la recta. Con las comunas: s = 5,5 minutos
@@ -198,8 +198,8 @@ es la misma afirmación.
 
 Con nombres (slide 37): la **hipótesis nula** H0 es que la pendiente real es
 0, el ingreso no tiene efecto; la **alternativa** H1, que no lo es. El
-estadístico es t = b / EE(b), a cuántos errores estándar del cero está la
-pendiente: −4,81 / 2,02 = −2,39 (slide 38). El valor p es la probabilidad, si
+estadístico es t = b / EE(b), la pendiente dividida por su error estándar, es
+decir, a cuántos errores estándar del cero está: −4,81 / 2,02 = −2,39 (slide 38). El valor p es la probabilidad, si
 H0 fuera cierta, de un t así de lejos de cero por cualquiera de los dos lados.
 La convención es rechazar H0 cuando p < 0,05. El cálculo (slide 39):
 
