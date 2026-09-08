@@ -242,16 +242,14 @@ normales. Los supuestos son sobre los residuos:
 
 ## Por qué esto importa en ciencia de datos (slide 45)
 
-Toda métrica de un modelo, la exactitud o el error de predicción, sale de un
-conjunto de prueba, que es una muestra: se mueve de muestra en muestra. Dos
-modelos con 70,5% y 71% de exactitud pueden ser el mismo modelo, y sin error
-estándar no se pueden comparar. La validación cruzada es exactamente la idea de
-esta clase: muchas muestras, y la desviación de la métrica entre pliegues es
-su error estándar. El bootstrap es el corazón de random forest (remuestrear
-los datos y promediar los modelos) y la forma de ponerle un intervalo a
-cualquier métrica. Y sobreajustar es ajustar el azar de la muestra: la
-varianza que se mide en esta clase es la que Ridge y Lasso controlan en la
-clase 7.
+Todo lo que entrega un modelo sale de una muestra: sus coeficientes, sus
+predicciones y las métricas con que se evalúa. Con otra muestra, todo eso
+cambia. Comparar dos modelos es comparar dos números que se mueven, y sin
+saber cuánto se mueven no se puede decir cuál es mejor. Un modelo que se
+ajusta demasiado a su muestra aprende el azar de esa muestra, y falla con
+datos nuevos; medir el movimiento es la forma de detectarlo. Las técnicas de
+las próximas clases, y del resto del diplomado, son maneras de medir y
+controlar ese movimiento.
 
 ## Para practicar con el notebook
 
