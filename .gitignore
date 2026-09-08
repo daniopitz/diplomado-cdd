@@ -34,3 +34,6 @@ generadores/
 datasets_proyecto.pdf
 presentaciones/c3_eda.pptx
 datos/eod_stgo.zip
+
+# Guiones de clase (material de la profesora, local)
+presentaciones/guion_*.md
