@@ -183,7 +183,7 @@ arregla una muestra sesgada ni filas que no son independientes. Cuando se
 pueden hacer los dos, conviene hacerlos: si coinciden, los supuestos de la
 fórmula están bien.
 
-## Etapa 5. Segundo uso del error estándar: el contraste (slides 35 a 45)
+## Etapa 5. Segundo uso del error estándar: el contraste (slides 35 a 46)
 
 **Qué tiene que ver el valor p con la regresión** (slide 36). La recta resume
 45 puntos, y esos puntos son una muestra. Imaginemos el mundo donde no hay
@@ -207,12 +207,12 @@ da la prueba; más allá de ±4,1 está la zona donde se rechaza la hipótesis
 nula. Que el intervalo no toque el 0 y que −4,8 caiga en la zona de rechazo
 es la misma afirmación.
 
-Con nombres (slide 38): la **hipótesis nula** H0 es que la pendiente real es
+Con nombres (slides 38 y 39, la segunda con un gráfico por paso): la **hipótesis nula** H0 es que la pendiente real es
 0, el ingreso no tiene efecto; la **alternativa** H1, que no lo es. El
 estadístico es t = b / EE(b), la pendiente dividida por su error estándar, es
-decir, a cuántos errores estándar del cero está: −4,81 / 2,02 = −2,39 (slide 39). El valor p es la probabilidad, si
+decir, a cuántos errores estándar del cero está: −4,81 / 2,02 = −2,39 (slide 40). El valor p es la probabilidad, si
 H0 fuera cierta, de un t así de lejos de cero por cualquiera de los dos lados.
-La convención es rechazar H0 cuando p < 0,05. El cálculo (slide 40):
+La convención es rechazar H0 cuando p < 0,05. El cálculo (slide 41):
 
     p = 2 · (1 − F(|t|))
 
@@ -223,8 +223,8 @@ la normal con un margen extra, porque σ se estimó con s a partir de pocos
 datos; con 45 comunas el 1,96 se vuelve 2,02, y con muchos datos vuelve a ser
 la normal. statsmodels la usa sola.
 
-Con eso el summary se lee completo (slide 41): coef, std err, t, P>|t| y el
-intervalo. La respuesta a la pregunta de la clase (slide 42): la pendiente
+Con eso el summary se lee completo (slide 42): coef, std err, t, P>|t| y el
+intervalo. La respuesta a la pregunta de la clase (slide 43): la pendiente
 que nos dio el modelo no es azar. En las comunas de mayor ingreso los viajes
 duran menos, unos 4,8 minutos menos por cada millón de pesos de ingreso medio,
 entre 0,75 y 8,9. Tres advertencias: con 45 comunas el resultado apenas cruza
@@ -233,7 +233,7 @@ muestra; que un efecto sea estadísticamente significativo no dice que sea
 grande, el tamaño lo da el coeficiente y su precisión el intervalo; y
 correlación no es causalidad, tampoco con p pequeño.
 
-**Los supuestos de OLS** (slides 42 a 44). La regresión por mínimos
+**Los supuestos de OLS** (slides 43 a 45). La regresión por mínimos
 cuadrados descansa en seis supuestos. Los dos primeros protegen a los
 coeficientes; los tres siguientes, a la inferencia (el error estándar, t y p),
 y son los que la clase muestra con datos; el sexto solo aparece con varias
@@ -247,7 +247,7 @@ variables.
    no explica no depende de x; no hay una variable omitida que se mueva junto
    con x. Si falla, el coeficiente atribuye a x lo que es de otra cosa. Es la
    razón de fondo de "correlación no es causalidad".
-3. **Errores independientes entre filas** (slide 43): cada fila aporta
+3. **Errores independientes entre filas** (slide 44): cada fila aporta
    información propia. Un ejemplo: en una regresión del gasto del hogar sobre
    el ingreso con 100 personas, si 50 son parejas de la misma casa, comparten
    ingreso, gasto y residuo; hay 100 filas pero 50 residuos independientes, y
@@ -255,14 +255,14 @@ variables.
    repetidas dos veces no hay información nueva, pero el error estándar de la
    pendiente baja de 2,02 a 1,41. Si falla, el error estándar sale demasiado
    chico y los t y los valores p quedan inflados.
-4. **Varianza constante de los errores** (slide 44): los puntos se alejan de
+4. **Varianza constante de los errores** (slide 45): los puntos se alejan de
    la recta lo mismo en todo el rango de x. Importa porque la fórmula del error
    estándar, EE(b) = s / √Σ(xᵢ − x̄)², resume todos los
    residuos en un solo número, s; si la dispersión crece con x, ningún s
    la describe y el error estándar queda mal calculado. En el modelo duración
    contra distancia, s crece de 17 a 45 minutos con la distancia; en log
    cambia mucho menos, otra razón del log de la clase 4.
-5. **Errores normales** (slide 45): lo que los t y p necesitan es que la
+5. **Errores normales** (slide 46): lo que los t y p necesitan es que la
    pendiente se reparta como una normal, no los residuos. Con pocos datos, como
    las 45 comunas, la pendiente hereda la forma de los residuos, así que hay
    que mirar su histograma y los atípicos. Con muchos datos la pendiente es
@@ -275,7 +275,7 @@ variables.
    combinación exacta de otras; si lo fuera, los coeficientes no se podrían
    separar.
 
-## Por qué esto importa en ciencia de datos (slide 46)
+## Por qué esto importa en ciencia de datos (slide 47)
 
 Todo lo que entrega un modelo sale de una muestra: sus coeficientes, sus
 predicciones y las métricas con que se evalúa. Con otra muestra, todo eso
