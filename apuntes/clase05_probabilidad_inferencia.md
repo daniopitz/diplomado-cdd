@@ -240,6 +240,19 @@ normales. Los supuestos son sobre los residuos:
    pendiente igual se reparte como una normal, por el teorema central del
    límite.
 
+## Por qué esto importa en ciencia de datos (slide 45)
+
+Toda métrica de un modelo, la exactitud o el error de predicción, sale de un
+conjunto de prueba, que es una muestra: se mueve de muestra en muestra. Dos
+modelos con 70,5% y 71% de exactitud pueden ser el mismo modelo, y sin error
+estándar no se pueden comparar. La validación cruzada es exactamente la idea de
+esta clase: muchas muestras, y la desviación de la métrica entre pliegues es
+su error estándar. El bootstrap es el corazón de random forest (remuestrear
+los datos y promediar los modelos) y la forma de ponerle un intervalo a
+cualquier métrica. Y sobreajustar es ajustar el azar de la muestra: la
+varianza que se mide en esta clase es la que Ridge y Lasso controlan en la
+clase 7.
+
 ## Para practicar con el notebook
 
 El notebook sigue el mismo orden: sección 2, el azar tiene forma; sección 3,
