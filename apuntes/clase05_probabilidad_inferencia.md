@@ -222,26 +222,41 @@ muestra; que un efecto sea estadísticamente significativo no dice que sea
 grande, el tamaño lo da el coeficiente y su precisión el intervalo; y
 correlación no es causalidad, tampoco con p pequeño.
 
-**Los supuestos de OLS** (slides 42 a 44). Los t y p de la regresión por
-mínimos cuadrados son válidos bajo tres supuestos sobre los errores, lo que la
-recta no explica. No se supone que las variables sean normales:
+**Los supuestos de OLS** (slides 42 a 44). La regresión por mínimos
+cuadrados descansa en seis supuestos. Los dos primeros protegen a los
+coeficientes; los tres siguientes, a la inferencia (el error estándar, t y p),
+y son los que la clase muestra con datos; el sexto solo aparece con varias
+variables.
 
-1. **Errores independientes entre filas**. Un ejemplo: en una regresión del
-   gasto del hogar sobre el ingreso con 100 personas, si 50 son parejas de
-   la misma casa, comparten ingreso, gasto y residuo: hay 100 filas pero 50
-   residuos independientes, y OLS cuenta 100.
-   El efecto se ve al repetir una tabla: con las 45 comunas repetidas dos
-   veces no hay información nueva, pero el error estándar de la pendiente baja
-   de 2,02 a 1,41. Con filas que se repiten, el error estándar sale demasiado
+1. **Linealidad**: la relación entre la respuesta y las variables es una recta,
+   en las variables tal como entran al modelo. Por eso en la clase 4 la
+   duración entró en logaritmo: en minutos la relación con la distancia no era
+   recta. Si falla, los coeficientes quedan sesgados.
+2. **Errores con media cero y sin relación con las variables**: lo que la recta
+   no explica no depende de x; no hay una variable omitida que se mueva junto
+   con x. Si falla, el coeficiente atribuye a x lo que es de otra cosa. Es la
+   razón de fondo de "correlación no es causalidad".
+3. **Errores independientes entre filas** (slide 42): cada fila aporta
+   información propia. Un ejemplo: en una regresión del gasto del hogar sobre
+   el ingreso con 100 personas, si 50 son parejas de la misma casa, comparten
+   ingreso, gasto y residuo; hay 100 filas pero 50 residuos independientes, y
+   OLS cuenta 100. El efecto se ve al repetir una tabla: con las 45 comunas
+   repetidas dos veces no hay información nueva, pero el error estándar de la
+   pendiente baja de 2,02 a 1,41. Si falla, el error estándar sale demasiado
    chico y los t y los valores p quedan inflados.
-2. **Varianza constante en todo el rango**: la dispersión de los residuos del
-   modelo duración contra distancia crece de 17 a 45 minutos con la distancia;
-   en log cambia mucho menos. Otra razón del log de la clase 4.
-3. **Errores normales**: importa con pocos datos, como las 45 comunas, donde conviene
-   mirar el histograma de residuos y los atípicos. Con 18 mil hogares deja de
-   importar: los residuos del modelo de motorización no son normales y su
-   pendiente igual se reparte como una normal, por el teorema central del
-   límite.
+4. **Varianza constante de los errores** (slide 43): la dispersión alrededor de
+   la recta es la misma en todo el rango de x. En el modelo duración contra
+   distancia crece de 17 a 45 minutos con la distancia; en log cambia mucho
+   menos, otra razón del log de la clase 4. Si falla, el error estándar queda
+   mal calculado.
+5. **Errores normales** (slide 44): solo se necesita para que t y p sean
+   exactos con pocos datos, como las 45 comunas, donde conviene mirar el
+   histograma de residuos y los atípicos. Con 18 mil hogares deja de importar:
+   los residuos del modelo de motorización no son normales y su pendiente
+   igual se reparte como una normal, por el teorema central del límite.
+6. **Sin colinealidad perfecta**, en la regresión múltiple: ninguna variable es
+   combinación exacta de otras; si lo fuera, los coeficientes no se podrían
+   separar.
 
 ## Por qué esto importa en ciencia de datos (slide 45)
 
