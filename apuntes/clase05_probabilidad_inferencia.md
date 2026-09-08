@@ -255,11 +255,13 @@ variables.
    repetidas dos veces no hay información nueva, pero el error estándar de la
    pendiente baja de 2,02 a 1,41. Si falla, el error estándar sale demasiado
    chico y los t y los valores p quedan inflados.
-4. **Varianza constante de los errores** (slide 44): la dispersión alrededor de
-   la recta es la misma en todo el rango de x. En el modelo duración contra
-   distancia crece de 17 a 45 minutos con la distancia; en log cambia mucho
-   menos, otra razón del log de la clase 4. Si falla, el error estándar queda
-   mal calculado.
+4. **Varianza constante de los errores** (slide 44): los puntos se alejan de
+   la recta lo mismo en todo el rango de x. Importa porque la fórmula del error
+   estándar, EE(b) = s / √Σ(xᵢ − x̄)², resume todos los
+   residuos en un solo número, s; si la dispersión crece con x, ningún s
+   la describe y el error estándar queda mal calculado. En el modelo duración
+   contra distancia, s crece de 17 a 45 minutos con la distancia; en log
+   cambia mucho menos, otra razón del log de la clase 4.
 5. **Errores normales** (slide 45): solo se necesita para que t y p sean
    exactos con pocos datos, como las 45 comunas, donde conviene mirar el
    histograma de residuos y los atípicos. Con 18 mil hogares deja de importar:
