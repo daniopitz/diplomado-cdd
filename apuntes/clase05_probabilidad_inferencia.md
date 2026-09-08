@@ -271,10 +271,14 @@ controlar ese movimiento.
 
 ## Para practicar con el notebook
 
-El notebook sigue el mismo orden: sección 2, el azar tiene forma; sección 3,
-la distribución muestral y el error estándar; sección 4, el intervalo;
-sección 5, la pendiente y el bootstrap; sección 6, la prueba de hipótesis y
-los supuestos; sección 7, el ejercicio con los datos de su proyecto.
+El notebook de la clase parte por lo que quedó pendiente de la clase 4 y
+luego practica lo de estas slides: sección 2, la regresión simple (el impacto
+de sacar una fila, la regresión ponderada y los atípicos); sección 3, la misma
+regresión en tres escalas; sección 4, la regresión múltiple con dummies y el
+R² ajustado; sección 5, la media de una muestra y el error estándar; sección
+6, el bootstrap de la pendiente y el std err del summary; sección 7, la prueba
+de hipótesis, t y p a mano y los supuestos; sección 8, el ejercicio con los
+datos de su proyecto.
 
 ## Glosario
 
