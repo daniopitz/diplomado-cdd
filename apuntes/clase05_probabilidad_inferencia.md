@@ -225,12 +225,13 @@ correlación no es causalidad, tampoco con p pequeño.
 **Lo que suponen esos t y p** (slides 42 a 44). No que las variables sean
 normales. Los supuestos son sobre los residuos:
 
-1. **Independientes**: el residuo de un viaje no debería decir nada del
-   residuo de otro. En la EOD la vuelta se parece a la ida (correlación 0,63
-   entre los residuos de los dos primeros viajes de una misma persona, contra
-   0,00 entre viajes de personas distintas). statsmodels cuenta 102 mil viajes
-   independientes cuando hay menos información, y el error estándar queda
-   demasiado chico.
+1. **Independientes**: cada fila aporta información propia. Un ejemplo: en
+   una encuesta del ingreso del hogar a 100 personas, si 50 son parejas de la
+   misma casa, hay 100 filas pero 50 informaciones, y el modelo cuenta 100.
+   El efecto se ve al repetir una tabla: con las 45 comunas repetidas dos
+   veces no hay información nueva, pero el error estándar de la pendiente baja
+   de 2,02 a 1,41. Con filas que se repiten, el error estándar sale demasiado
+   chico y los t y los valores p quedan inflados.
 2. **Misma varianza en todo el rango**: la dispersión de los residuos del
    modelo duración contra distancia crece de 17 a 45 minutos con la distancia;
    en log cambia mucho menos. Otra razón del log de la clase 4.
