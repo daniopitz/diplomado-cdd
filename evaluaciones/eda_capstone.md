@@ -17,6 +17,9 @@ de empezar.
   Pandas y Matplotlib, por el aula virtual. Si los datos no se pueden adjuntar
   (por tamaño o confidencialidad), el notebook debe indicar cómo obtenerlos o
   incluir una muestra que permita ejecutarlo.
+- Alternativa: entregar el notebook en un repositorio de GitHub. En ese caso,
+  el equipo debe dar acceso de lectura a los ayudantes del curso y subir al
+  aula virtual un PDF con el link al repositorio.
 - NumPy, Pandas y Matplotlib son la base que pide el programa, no un límite:
   se pueden usar además otras bibliotecas de ciencia de datos (seaborn, SciPy
   y similares), sin penalización.
