@@ -12,7 +12,7 @@ estadísticos. Ponderación: 40% del módulo. Resultado de aprendizaje RA1.1.
 - Alternativa: un repositorio de GitHub con el notebook, con acceso de lectura
   para los ayudantes del curso y un PDF con el link subido al aula virtual.
 - Si el preprocesamiento es extenso, el notebook puede partir de una tabla
-  intermedia, siempre que sea reproducible (tabla adjunta y cómo se obtuvo).
+  intermedia, siempre que sea reproducible (tabla adjunta, con el código y una descripción de cómo se obtuvo).
   Los datos confidenciales que no se pueden compartir deben declararse.
 - Puede haber más de un notebook o archivos .py auxiliares, documentando qué
   contiene cada uno y en qué orden se ejecutan.

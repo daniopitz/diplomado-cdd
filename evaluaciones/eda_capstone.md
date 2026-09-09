@@ -23,7 +23,7 @@ de empezar.
 - Si el preprocesamiento de los datos es extenso, el notebook puede partir de
   un punto intermedio (por ejemplo, de una tabla ya limpia), siempre que el
   resultado sea reproducible: se adjunta esa tabla intermedia junto con el
-  código o una descripción de cómo se obtuvo. Si los datos son confidenciales
+  código y una descripción de cómo se obtuvo. Si los datos son confidenciales
   y no se pueden compartir, debe declararse en el notebook.
 - La entrega puede constar de más de un notebook o de archivos .py auxiliares.
   Si es así, hay que documentarlo: qué contiene cada archivo y en qué orden se
