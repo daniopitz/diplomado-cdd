@@ -20,7 +20,7 @@ de empezar.
 - NumPy, Pandas y Matplotlib son la base que pide el programa, no un límite:
   se pueden usar además otras bibliotecas de ciencia de datos (seaborn, SciPy
   y similares), sin penalización.
-- Fecha de entrega: lunes 15 de septiembre de 2026.
+- Fecha de entrega: martes 15 de septiembre de 2026.
 
 ## Qué debe contener el notebook
 

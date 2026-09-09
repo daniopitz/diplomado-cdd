@@ -9,7 +9,7 @@ estadísticos. Ponderación: 40% del módulo. Resultado de aprendizaje RA1.1.
   integrantes.
 - Un notebook de Jupyter (.ipynb) ejecutado de principio a fin, con NumPy,
   Pandas y Matplotlib, por el aula virtual.
-- Fecha de entrega: lunes 15 de septiembre de 2026.
+- Fecha de entrega: martes 15 de septiembre de 2026.
 
 ## Qué se evalúa
 
