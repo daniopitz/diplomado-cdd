@@ -20,6 +20,11 @@ de empezar.
 - Alternativa: entregar el notebook en un repositorio de GitHub. En ese caso,
   el equipo debe dar acceso de lectura a los ayudantes del curso y subir al
   aula virtual un PDF con el link al repositorio.
+- Si el preprocesamiento de los datos es extenso, el notebook puede partir de
+  un punto intermedio (por ejemplo, de una tabla ya limpia), siempre que el
+  resultado sea reproducible: se adjunta esa tabla intermedia junto con el
+  código o una descripción de cómo se obtuvo. Si los datos son confidenciales
+  y no se pueden compartir, debe declararse en el notebook.
 - NumPy, Pandas y Matplotlib son la base que pide el programa, no un límite:
   se pueden usar además otras bibliotecas de ciencia de datos (seaborn, SciPy
   y similares), sin penalización.
