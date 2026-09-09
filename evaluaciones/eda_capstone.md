@@ -25,6 +25,9 @@ de empezar.
   resultado sea reproducible: se adjunta esa tabla intermedia junto con el
   código o una descripción de cómo se obtuvo. Si los datos son confidenciales
   y no se pueden compartir, debe declararse en el notebook.
+- La entrega puede constar de más de un notebook o de archivos .py auxiliares.
+  Si es así, hay que documentarlo: qué contiene cada archivo y en qué orden se
+  ejecutan.
 - NumPy, Pandas y Matplotlib son la base que pide el programa, no un límite:
   se pueden usar además otras bibliotecas de ciencia de datos (seaborn, SciPy
   y similares), sin penalización.

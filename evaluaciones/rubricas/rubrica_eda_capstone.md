@@ -14,6 +14,8 @@ estadísticos. Ponderación: 40% del módulo. Resultado de aprendizaje RA1.1.
 - Si el preprocesamiento es extenso, el notebook puede partir de una tabla
   intermedia, siempre que sea reproducible (tabla adjunta y cómo se obtuvo).
   Los datos confidenciales que no se pueden compartir deben declararse.
+- Puede haber más de un notebook o archivos .py auxiliares, documentando qué
+  contiene cada uno y en qué orden se ejecutan.
 - Fecha de entrega: martes 15 de septiembre de 2026.
 
 ## Qué se evalúa
