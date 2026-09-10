@@ -80,10 +80,9 @@ logaritmo convierte multiplicar en sumar: multiplicar los odds por 4 es
 sumar 1,39.
 
 **La misma relación en tres escalas** (slide 15). Con los nueve tramos de la
-slide 10: el logaritmo de los odds de cada tramo contra la deuda sigue una
-recta, y eso es lo que el modelo supone. Al deshacer el logaritmo, la recta se
-vuelve una exponencial; al pasar de odds a probabilidad, la exponencial se
-vuelve la S. La recta y la S son la misma relación vista en dos escalas.
+slide 10: en odds, los puntos suben como una exponencial; en logaritmo de los
+odds, siguen una recta, y eso es lo que el modelo supone; en probabilidad,
+la S. La recta y la S son la misma relación vista en dos escalas.
 
 **La fórmula** (slide 16). El modelo es:
 
