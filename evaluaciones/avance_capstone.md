@@ -101,6 +101,6 @@ escrita, en el informe, incluido el cumplimiento del formato y la extensión.
 
 ## Uso de inteligencia artificial
 
-Se aplica la regla del módulo: el uso de IA generativa está permitido con
-declaración (qué herramienta se usó y para qué). Debe entender y poder
-explicar cualquier parte de lo que entregue o presente.
+El uso de IA generativa está permitido con declaración: qué herramienta se
+usó y para qué. Debe entender y poder explicar cualquier parte de lo que
+entregue o presente.
