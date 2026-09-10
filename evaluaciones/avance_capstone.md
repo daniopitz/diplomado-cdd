@@ -44,9 +44,10 @@ Esquema sugerido:
    exploratorio, cada uno con su gráfico. Un hallazgo es una afirmación sobre
    los datos ("los viajes en transporte público duran el doble que los viajes
    en auto"), no la descripción de un gráfico.
-4. **El primer modelo**, si el proyecto ya tiene uno: qué explica, qué dice el
-   coeficiente principal y qué tan seguro es (el error estándar o el intervalo
-   del summary). Si no lo tiene, qué modelo se propone y por qué.
+4. **El primer modelo.** Todo proyecto presenta un modelo ajustado a sus datos:
+   uno de los vistos en clases (regresión lineal simple o múltiple, regresión
+   logística) u otro que el equipo ya maneje. Qué explica, qué dicen sus
+   resultados y qué tan seguros son.
 5. **Limitaciones y próximos pasos**: qué no permiten decir los datos, qué
    falta, y qué se hará en los módulos siguientes.
 
@@ -73,11 +74,14 @@ orden puede cambiar, pero cada punto debe estar.
    con la evidencia que lo sostiene: un gráfico o una tabla, con el número
    concreto en el texto. Se privilegian pocos hallazgos bien argumentados por
    sobre muchos gráficos sin lectura.
-5. **Primer modelo.** Si corresponde: la regresión lineal o logística ajustada,
-   la lectura de sus coeficientes con su incertidumbre, y lo que el modelo
-   permite y no permite concluir (en particular, que una asociación no es
-   causalidad). Si el proyecto todavía no llega a un modelo, esta sección
-   describe cuál se propone y con qué variables.
+5. **Primer modelo.** Obligatorio: un modelo ajustado a los datos del
+   proyecto, ya sea uno de los vistos en clases (regresión lineal simple o
+   múltiple, regresión logística) u otro que el equipo ya maneje desde antes.
+   Se indica qué variable explica y con cuáles, se leen sus resultados con su
+   incertidumbre, y se dice qué permite y qué no permite concluir (en
+   particular, que una asociación no es causalidad). Si el modelo no es de
+   los vistos en clases, se explica brevemente qué hace y cómo se leen sus
+   resultados.
 6. **Limitaciones y próximos pasos.** Qué preguntas quedaron abiertas, qué
    restricciones tienen los datos y qué se hará a continuación.
 7. **Bibliografía.** Las fuentes de los datos y las referencias que se hayan
