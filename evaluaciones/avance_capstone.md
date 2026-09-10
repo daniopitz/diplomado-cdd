@@ -27,8 +27,8 @@ que se publica en el aula virtual antes de la presentación.
 Cada equipo cuenta al curso dónde está su proyecto y qué encontró hasta ahora.
 El orden de las presentaciones se publica en el aula virtual.
 
-- **7 minutos por equipo, más 3 de preguntas y comentarios** de la profesora y
-  del curso. El tiempo se controla: conviene ensayar.
+- **Máximo 10 minutos por equipo**, más preguntas y comentarios de la
+  profesora y del curso. El tiempo se controla: conviene ensayar.
 - Los dos integrantes participan de la exposición.
 - Se recomienda un máximo de 8 slides, con pocas palabras y gráficos que se
   lean desde lejos: título descriptivo, ejes con nombre y unidades.
