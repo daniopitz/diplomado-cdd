@@ -177,7 +177,7 @@ clase2 y clase3 valen 1 en segunda y tercera clase y las dos valen 0 en
 primera (la referencia). Una mujer de primera clase de 30 años: z = 1,25 +
 2,52 − 0,037·30 = 2,7, P = 0,93.
 
-## Etapa 5: clasificar (slides 30 a 36)
+## Etapa 5: clasificar (slides 30 a 37)
 
 **El umbral** (slide 31). Un clasificador convierte la probabilidad en un sí
 o un no con un umbral; el más simple es 0,5. Con él, el modelo dice "no paga"
@@ -199,8 +199,13 @@ positivo es un mensaje real en la carpeta de spam; para un examen médico, el
 falso negativo es una enfermedad sin detectar. Cómo elegir el umbral según
 ese costo queda para la próxima clase.
 
-**La exactitud engaña cuando el sí es raro** (slide 34). La exactitud es la
-fracción de aciertos: el modelo acierta el 97,3%, pero decir que nadie deja de
+**La exactitud** (slide 34) es la fracción de aciertos: la diagonal de la
+matriz dividida por el total, (VP + VN) / n = (100 + 9.625) / 10.000 = 0,973.
+Hay que compararla con la **base**, la exactitud de no tener modelo y predecir
+siempre la clase más frecuente: decir que todos pagan acierta 9.667 / 10.000
+= 0,967.
+
+**La exactitud engaña cuando el sí es raro** (slide 35). Comparadas: el modelo acierta el 97,3%, pero decir que nadie deja de
 pagar acierta el 96,7%. De los 333 clientes que no pagan, el modelo detecta
 100. Con un sí raro, la exactitud mide sobre todo lo fácil: los noes.
 
@@ -209,12 +214,12 @@ matriz y no engañan cuando el sí es raro (sensibilidad y especificidad), cómo
 elegir el umbral según el costo de cada error, y la curva ROC, se ven el
 martes 15.
 
-**El Titanic como clasificador** (slide 35). Con un sí frecuente (41%), la
+**El Titanic como clasificador** (slide 36). Con un sí frecuente (41%), la
 exactitud sí informa: 79% contra el 59% de decir que todos murieron. Los
 errores: 83 falsos negativos (pasajeros que sobrevivieron y el modelo daba por
 muertos) y 68 falsos positivos.
 
-**Evaluar fuera de la muestra** (slide 36). Medir la exactitud en los mismos
+**Evaluar fuera de la muestra** (slide 37). Medir la exactitud en los mismos
 datos con que se ajustó el modelo es hacer trampa: el modelo ya los vio. Se
 separa al azar una parte de **prueba** antes de ajustar; el modelo se ajusta
 solo con la parte de **entrenamiento** y se mide en la de prueba. Con modelos
@@ -223,7 +228,7 @@ la de entrenamiento sube y la de prueba no, y la de prueba es la única que
 vale. Es el punto de partida de la evaluación de modelos en el resto del
 diplomado.
 
-## La respuesta a la pregunta de la clase (slides 37 y 38)
+## La respuesta a la pregunta de la clase (slides 38 y 39)
 
 El modelo no dice quién deja de pagar ni quién sobrevivió: dice con qué
 probabilidad. El sí o el no lo ponemos nosotros con el umbral, y cada umbral
