@@ -7,8 +7,10 @@ El informe de avance comunica los primeros hallazgos del proyecto, en dos
 formatos: una presentación oral ante el curso y un informe escrito breve.
 Cierra el módulo y recoge lo trabajado en la formulación (evaluación 1) y en el
 primer análisis exploratorio (evaluación 2), ahora con los primeros resultados y
-con la lectura que el módulo enseñó a hacer de ellos. Se evalúa con una rúbrica
-que se publica en el aula virtual antes de la presentación.
+con la lectura que el módulo enseñó a hacer de ellos. Las dos partes pesan lo
+mismo: la presentación oral es el 50% de la nota de esta evaluación y el
+informe escrito, el otro 50%. Se evalúa con una rúbrica que se publica en el
+aula virtual antes de la presentación.
 
 ## Condiciones de entrega
 
