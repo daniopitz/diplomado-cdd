@@ -28,9 +28,9 @@ si son estudiantes; y 891 pasajeros del Titanic.
 La variable respuesta y vale 1 (sí) o 0 (no), y hay una o más variables x con
 las que explicarla (slide 6). Un cliente tomado al azar es una **Bernoulli**:
 sí con probabilidad p, no con probabilidad 1 − p. La media de una columna de
-ceros y unos es la fracción de unos, la **proporción**: en los clientes,
-p = 0,033, porque 333 de 10.000 dejaron de pagar (slides 7 y 8). Contar los
-síes entre n clientes es la binomial de la clase 5.
+ceros y unos es la fracción de unos, la **proporción**: en los clientes, 333
+de 10.000 dejaron de pagar, p = 333 / 10.000 = 0,033, y 1 − p = 0,967
+(slides 7 y 8). Contar los síes entre n clientes es la binomial de la clase 5.
 
 Un dato que importa al final: el sí es raro (3,3%).
 
