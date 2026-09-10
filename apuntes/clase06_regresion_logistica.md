@@ -61,46 +61,46 @@ Pone la recta de siempre en una escala donde no puede salirse de rango, y la
 S es cómo se ve esa recta al volver a las probabilidades. Se construye en tres
 pasos.
 
-**Las chances** (slide 13). Son la probabilidad dicha de otra forma: cuántos
-síes hay por cada no, chances = P / (1 − P). Con P = 0,8, de cada 10 clientes
-8 no pagan y 2 pagan: chances 8 / 2 = 4, cuatro a uno. Con P = 0,5, uno a uno.
-Con P = 0,2, 0,25, uno a cuatro. Las chances van de 0 a infinito: ya no tienen
+**Los odds (chances)** (slide 13). Son la probabilidad dicha de otra forma: cuántos
+síes hay por cada no, odds = P / (1 − P). Con P = 0,8, de cada 10 clientes
+8 no pagan y 2 pagan: odds 8 / 2 = 4, cuatro a uno. Con P = 0,5, uno a uno.
+Con P = 0,2, 0,25, uno a cuatro. Los odds van de 0 a infinito: ya no tienen
 el techo de 1, pero no pueden ser negativas.
 
-**El logaritmo de las chances** (slide 14). log(4) = 1,39, log(1) = 0,
+**El logaritmo de los odds** (slide 14). log(4) = 1,39, log(1) = 0,
 log(0,25) = −1,39: negativo cuando el sí es menos probable que el no, cero
 cuando empatan, positivo cuando el sí es más probable. Puede ser cualquier
 número, sin techo ni piso: en esta escala sí cabe una recta. Además, el
-logaritmo convierte multiplicar en sumar: multiplicar las chances por 4 es
+logaritmo convierte multiplicar en sumar: multiplicar los odds por 4 es
 sumar 1,39.
 
 **La misma relación en tres escalas** (slide 15). Con los nueve tramos de la
-slide 10: el logaritmo de las chances de cada tramo contra la deuda sigue una
+slide 10: el logaritmo de los odds de cada tramo contra la deuda sigue una
 recta, y eso es lo que el modelo supone. Al deshacer el logaritmo, la recta se
-vuelve una exponencial; al pasar de chances a probabilidad, la exponencial se
+vuelve una exponencial; al pasar de odds a probabilidad, la exponencial se
 vuelve la S. La recta y la S son la misma relación vista en dos escalas.
 
 **La fórmula** (slide 16). El modelo es:
 
     log(P / (1 − P)) = a + b·x
 
-donde P es la probabilidad de un sí dado x, P / (1 − P) son las chances, y
+donde P es la probabilidad de un sí dado x, P / (1 − P) son los odds, y
 a + b·x es la recta. Despejando P (se toma e a ambos lados y se ordena) queda:
 
     P(y = 1 | x) = 1 / (1 + e^(−(a + b·x)))
 
 Por eso el exponente es a + b·x: es la recta del modelo, que reaparece al
 despejar. Y como sumar b en el logaritmo es multiplicar afuera por e^b, **e^b
-dice cuánto se multiplican las chances por cada unidad de x**, igual que en el
+dice cuánto se multiplican los odds por cada unidad de x**, igual que en el
 modelo en log de la clase 4.
 
 **La sigmoide** (slide 17) es la función que apareció al despejar: toma el
-logaritmo de las chances z, cualquier número, y devuelve la probabilidad, entre
-0 y 1. En z = 0 (chances uno a uno) vale 0,5; hacia la derecha se acerca a 1 y
+logaritmo de los odds z, cualquier número, y devuelve la probabilidad, entre
+0 y 1. En z = 0 (odds uno a uno) vale 0,5; hacia la derecha se acerca a 1 y
 hacia la izquierda a 0, sin pasarse nunca.
 
 **Cómo se lee b** (slide 18). Con la deuda en cientos de dólares, b = 0,55 y
-e^b = 1,73: cada 100 dólares más de deuda multiplican las chances de no pagar
+e^b = 1,73: cada 100 dólares más de deuda multiplican los odds de no pagar
 por 1,7. En probabilidades: 0,01 con 1.000 dólares, 0,08 con 1.500, 0,59 con
 2.000. La curva cruza 0,5 en 1.937 dólares.
 
@@ -122,7 +122,7 @@ lee igual que P>|t|.
 más (4,3% contra 2,9%). Pero los estudiantes deben más (deuda media 988
 dólares contra 772), y a igual deuda dejan de pagar menos. Al poner la deuda en
 el modelo, el coeficiente de estudiante cambia de signo: e^(−0,65) = 0,52, a
-igual deuda e ingreso las chances de un estudiante son la mitad. Es la
+igual deuda e ingreso los odds de un estudiante son la mitad. Es la
 confusión de variables de la clase 4, ahora en la logística; `estudiante` es
 una dummy, como lo era el modo de transporte. El ingreso no aporta (p = 0,71):
 con la deuda en el modelo no dice nada nuevo.
@@ -131,7 +131,7 @@ con la deuda en el modelo no dice nada nuevo.
 sobrevivió contra el 19% de los hombres, y la clase del pasaje ordena a ambos
 grupos. El modelo usa el sexo, la clase (categórica, con dummies) y la edad,
 que falta en 177 pasajeros. Cada e^b compara con una referencia, a igualdad de
-las otras variables: las chances de sobrevivir de una mujer son 12 veces las
+las otras variables: los odds de sobrevivir de una mujer son 12 veces las
 de un hombre (e^2,52); las de la tercera clase, el 8% de las de la primera
 (e^−2,58); cada año de edad las multiplica por 0,96. Con varias variables, la
 recta suma el aporte de cada una y la sigmoide da la probabilidad: 0,94 para
@@ -208,10 +208,10 @@ medirlos en datos que el modelo no vio.
 
 - **Bernoulli**: variable que vale 1 con probabilidad p y 0 con probabilidad 1 − p; la distribución de un sí o no.
 - **Proporción**: la media de una columna de ceros y unos; la fracción de síes.
-- **Chances (odds)**: P / (1 − P), cuántos síes por cada no; van de 0 a infinito.
-- **Logaritmo de las chances (logit)**: la escala en que la logística es una recta; cualquier número, positivo o negativo.
-- **Sigmoide**: la función que devuelve la probabilidad a partir del logaritmo de las chances; siempre entre 0 y 1.
-- **e^b**: cuánto se multiplican las chances por cada unidad de x.
+- **Odds (chances)**: P / (1 − P), cuántos síes por cada no; van de 0 a infinito.
+- **Logaritmo de los odds (logit)**: la escala en que la logística es una recta; cualquier número, positivo o negativo.
+- **Sigmoide**: la función que devuelve la probabilidad a partir del logaritmo de los odds; siempre entre 0 y 1.
+- **e^b**: cuánto se multiplican los odds por cada unidad de x.
 - **Máxima verosimilitud**: el criterio de ajuste de la logística; elige los coeficientes que hacen más probable lo observado.
 - **z**: el t del summary cuando la referencia es la normal; P>|z| se lee igual que P>|t|.
 - **Umbral**: la probabilidad a partir de la cual el clasificador dice sí.
