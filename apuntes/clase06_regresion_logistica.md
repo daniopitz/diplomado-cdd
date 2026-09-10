@@ -220,9 +220,10 @@ medirlos en datos que el modelo no vio.
 | 3 | La fracción que no paga por tramo de deuda: los nueve puntos. |
 | 4 | La recta sobre el 0/1: predicciones fuera de rango y lejos de los puntos. |
 | 5 | `smf.logit`, e^b, `predict`, la curva, el summary y el intervalo de e^b. |
-| 6 | El estudiante con y sin la deuda; el Titanic con `C(clase)`; los perfiles. |
-| 7 | El umbral 0,5, la matriz de confusión con `pd.crosstab`, los dos errores, la exactitud contra la base y el Titanic como clasificador. |
-| 8 | Reparto entrenamiento y prueba, y la exactitud en cada parte. |
+| 6 | El caso del estudiante paso a paso: el total, la deuda por grupo, la comparación por tramo y los dos modelos; después el ingreso. |
+| 7 | Otro problema: el Titanic con `C(clase)` y los perfiles. |
+| 8 | El umbral 0,5, la matriz de confusión con `pd.crosstab`, los dos errores, la exactitud contra la base y el Titanic como clasificador. |
+| 9 | Reparto entrenamiento y prueba, y la exactitud en cada parte. |
 
 ## Glosario
 
