@@ -75,9 +75,7 @@ el techo de 1, pero no pueden ser negativas.
 **El logaritmo de los odds** (slide 15). log(4) = 1,39, log(1) = 0,
 log(0,25) = −1,39: negativo cuando el sí es menos probable que el no, cero
 cuando empatan, positivo cuando el sí es más probable. Puede ser cualquier
-número, sin techo ni piso: en esta escala sí cabe una recta. Además, el
-logaritmo convierte multiplicar en sumar: multiplicar los odds por 4 es
-sumar 1,39.
+número, sin techo ni piso: en esta escala sí cabe una recta.
 
 **Despejar P** (slide 16). El modelo dice que el logaritmo de los odds es la
 recta, z = a + b·x. Para volver a la probabilidad se despeja P en cuatro
