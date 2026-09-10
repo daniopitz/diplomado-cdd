@@ -111,7 +111,7 @@ recta suma el aporte de cada una y la sigmoide da la probabilidad: 0,94 para
 una mujer de primera clase de 30 años, 0,08 para un hombre de tercera de la
 misma edad.
 
-## Etapa 5: clasificar (slides 25 a 34)
+## Etapa 5: clasificar (slides 25 a 31)
 
 **El umbral** (slide 26). Un clasificador convierte la probabilidad en un sí
 o un no con un umbral; el más simple es 0,5. Con él, el modelo dice "no paga"
@@ -130,36 +130,25 @@ Los dos errores no cuestan lo mismo, y cuál cuesta más lo dice el problema,
 no el modelo (slide 28): para el banco, el falso negativo es dinero perdido y
 el falso positivo, un cliente perdido; para un filtro de correo, el falso
 positivo es un mensaje real en la carpeta de spam; para un examen médico, el
-falso negativo es una enfermedad sin detectar.
+falso negativo es una enfermedad sin detectar. Cómo elegir el umbral según
+ese costo queda para la próxima clase.
 
 **La exactitud engaña cuando el sí es raro** (slide 29). La exactitud es la
 fracción de aciertos: el modelo acierta el 97,3%, pero decir que nadie deja de
 pagar acierta el 96,7%. De los 333 clientes que no pagan, el modelo detecta
 100. Con un sí raro, la exactitud mide sobre todo lo fácil: los noes.
 
-**Sensibilidad y especificidad** (slide 30) salen de la misma matriz y no
-engañan:
+**Lo que queda para la próxima clase.** Dos medidas que salen de la misma
+matriz y no engañan cuando el sí es raro (sensibilidad y especificidad), cómo
+elegir el umbral según el costo de cada error, y la curva ROC, se ven el
+martes 15.
 
-- **Sensibilidad** = VP / (VP + FN): de los que eran sí, qué fracción detectó
-  el modelo. En el ejemplo, 100 / 333 = 0,30.
-- **Especificidad** = VN / (VN + FP): de los que eran no, qué fracción dejó en
-  paz. En el ejemplo, 9.625 / 9.667 = 0,996.
+**El Titanic como clasificador** (slide 30). Con un sí frecuente (41%), la
+exactitud sí informa: 79% contra el 59% de decir que todos murieron. Los
+errores: 83 falsos negativos (pasajeros que sobrevivieron y el modelo daba por
+muertos) y 68 falsos positivos.
 
-**El umbral es una decisión** (slide 31). Bajar el umbral sube la sensibilidad
-y baja la especificidad, siempre. Con umbral 0,2 se detectan 199 de los 333
-morosos a cambio de 263 falsos positivos, y la exactitud baja, lo que no
-importa. No hay umbral correcto: hay un balance entre los dos errores, y lo
-fija el costo de cada uno. La **curva ROC** (slide 32) dibuja ese balance para
-todos los umbrales: sensibilidad contra 1 − especificidad, un punto por
-umbral; cuanto más se pega a la esquina superior izquierda, mejor separa el
-modelo, y la diagonal es adivinar al azar.
-
-**El Titanic como clasificador** (slide 33). Con un sí frecuente (41%), la
-exactitud sí informa: 79% contra el 59% de decir que todos murieron.
-Sensibilidad 0,71 y especificidad 0,84: el modelo se equivoca más con los que
-sobrevivieron.
-
-**Evaluar fuera de la muestra** (slide 34). Medir la exactitud en los mismos
+**Evaluar fuera de la muestra** (slide 31). Medir la exactitud en los mismos
 datos con que se ajustó el modelo es hacer trampa: el modelo ya los vio. Se
 separa al azar una parte de **prueba** antes de ajustar; el modelo se ajusta
 solo con la parte de **entrenamiento** y se mide en la de prueba. Con modelos
@@ -168,11 +157,11 @@ la de entrenamiento sube y la de prueba no, y la de prueba es la única que
 vale. Es el punto de partida de la evaluación de modelos en el resto del
 diplomado.
 
-## La respuesta a la pregunta de la clase (slides 35 y 36)
+## La respuesta a la pregunta de la clase (slides 32 y 33)
 
 El modelo no dice quién deja de pagar ni quién sobrevivió: dice con qué
-probabilidad. El sí o el no lo ponemos nosotros con el umbral, y con él
-elegimos cuántos falsos positivos y cuántos falsos negativos aceptar. La
+probabilidad. El sí o el no lo ponemos nosotros con el umbral, y cada umbral
+deja una cantidad de falsos positivos y de falsos negativos. La
 exactitud sola no basta: hay que mirar los dos errores por separado, y
 medirlos en datos que el modelo no vio.
 
@@ -184,7 +173,7 @@ medirlos en datos que el modelo no vio.
 | 3 | La recta sobre el 0/1 y sus predicciones fuera de rango. |
 | 4 | `smf.logit`, e^b, `predict`, la curva, el summary y el intervalo de e^b. |
 | 5 | El estudiante con y sin la deuda; el Titanic con `C(clase)`; los perfiles. |
-| 6 | El umbral, `pd.crosstab`, la función `evaluar`, la tabla de umbrales y la curva ROC. |
+| 6 | El umbral 0,5, la matriz de confusión con `pd.crosstab`, los dos errores, la exactitud contra la base y el Titanic como clasificador. |
 | 7 | Reparto entrenamiento y prueba, y la exactitud en cada parte. |
 
 ## Glosario
@@ -200,9 +189,6 @@ medirlos en datos que el modelo no vio.
 - **Matriz de confusión**: la tabla de lo real contra lo predicho.
 - **Falso positivo**: el modelo dijo sí y era no. **Falso negativo**: el modelo dijo no y era sí.
 - **Exactitud**: fracción de aciertos sobre el total.
-- **Sensibilidad**: fracción de los síes reales que el modelo detectó.
-- **Especificidad**: fracción de los noes reales que el modelo dejó en paz.
-- **Curva ROC**: sensibilidad contra 1 − especificidad para todos los umbrales.
 - **Entrenamiento y prueba**: la parte de los datos con que se ajusta el modelo y la parte, separada antes, en que se mide.
 
 ## Referencias
