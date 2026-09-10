@@ -48,7 +48,12 @@ S: casi 0 con deudas bajas, 0,50 entre 1.800 y 2.100 dólares, 1 desde los
 2.400.
 
 **La recta** (slide 11). Si se ajusta la recta de mínimos cuadrados de la clase
-4 con la respuesta 0/1, la recta intenta ser una probabilidad y no lo logra:
+4 con la respuesta 0/1, lo que predice para cada deuda es el promedio de y
+entre los clientes con esa deuda, y el promedio de una columna de ceros y
+unos es la fracción de unos: la recta predice la fracción que no paga según
+la deuda, la misma cantidad que las fracciones por tramo estiman sin modelo,
+y por eso se pueden comparar. La recta intenta ser una probabilidad y no lo
+logra:
 con deuda 0 predice −0,08, una probabilidad negativa, y con 2.000 dólares
 predice 0,18 cuando la fracción real de ese tramo es 0,50. Una probabilidad
 vive entre 0 y 1 y las fracciones suben en forma de S; la recta no respeta ni
