@@ -30,7 +30,8 @@ las que explicarla (slide 6). Un cliente tomado al azar es una **Bernoulli**:
 sí con probabilidad p, no con probabilidad 1 − p. La media de una columna de
 ceros y unos es la fracción de unos, la **proporción**: en los clientes, 333
 de 10.000 dejaron de pagar, p = 333 / 10.000 = 0,033, y 1 − p = 0,967
-(slides 7 y 8). Contar los síes entre n clientes es la binomial de la clase 5.
+(slides 7 y 8). Es la distribución más simple que existe: dos resultados y una
+probabilidad.
 
 Un dato que importa al final: el sí es raro (3,3%).
 
@@ -169,7 +170,7 @@ medirlos en datos que el modelo no vio.
 
 | Sección | Qué se hace |
 |---|---|
-| 2 | La proporción, la binomial y la fracción que no paga por tramo de deuda. |
+| 2 | La proporción p y la fracción que no paga por tramo de deuda. |
 | 3 | La recta sobre el 0/1 y sus predicciones fuera de rango. |
 | 4 | `smf.logit`, e^b, `predict`, la curva, el summary y el intervalo de e^b. |
 | 5 | El estudiante con y sin la deuda; el Titanic con `C(clase)`; los perfiles. |
@@ -178,7 +179,7 @@ medirlos en datos que el modelo no vio.
 
 ## Glosario
 
-- **Bernoulli**: variable que vale 1 con probabilidad p y 0 con probabilidad 1 − p.
+- **Bernoulli**: variable que vale 1 con probabilidad p y 0 con probabilidad 1 − p; la distribución de un sí o no.
 - **Proporción**: la media de una columna de ceros y unos; la fracción de síes.
 - **Sigmoide**: función que convierte cualquier número en una probabilidad entre 0 y 1.
 - **Chances (odds)**: P / (1 − P), la razón sí contra no.
