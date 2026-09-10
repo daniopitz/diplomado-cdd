@@ -37,14 +37,7 @@ Un dato que importa al final: el sí es raro (3,3%).
 
 ## Etapa 2: la recta no sirve (slides 9 a 11)
 
-**La recta** (slide 10). Lo que se quiere es que p dependa de la deuda. Si se
-ajusta la recta de mínimos cuadrados de la clase 4 con la respuesta 0/1, la
-recta intenta ser una probabilidad y no lo logra: con deuda 0 predice −0,08,
-una probabilidad negativa, y con 2.700 dólares llega solo a 0,28, cuando casi
-todos esos clientes dejaron de pagar. Una probabilidad vive entre 0 y 1; la
-recta sale del rango y no puede curvarse.
-
-**La probabilidad de no pagar, por tramo de deuda** (slide 11). Se agrupan los clientes por
+**La probabilidad de no pagar, por tramo de deuda** (slide 10). Se agrupan los clientes por
 **tramo** de deuda, un intervalo de 300 dólares (0 a 300, 300 a 600, y así
 hasta 2.700: nueve tramos), y en cada tramo se cuenta cuántos clientes hay y
 cuántos dejaron de pagar. En el tramo de 1.800 a 2.100 dólares hay 229
@@ -52,7 +45,14 @@ clientes y 114 dejaron de pagar: 114 / 229 = 0,50. Esa fracción es la
 probabilidad de no pagar de un cliente con esa deuda, estimada con los datos,
 y es un punto del gráfico: nueve tramos, nueve puntos, que suben en forma de
 S: casi 0 con deudas bajas, 0,50 entre 1.800 y 2.100 dólares, 1 desde los
-2.400. Esa S es la curva que hace falta.
+2.400.
+
+**La recta** (slide 11). Si se ajusta la recta de mínimos cuadrados de la clase
+4 con la respuesta 0/1, la recta intenta ser una probabilidad y no lo logra:
+con deuda 0 predice −0,08, una probabilidad negativa, y con 2.000 dólares
+predice 0,18 cuando la fracción real de ese tramo es 0,50. Una probabilidad
+vive entre 0 y 1 y las fracciones suben en forma de S; la recta no respeta ni
+el rango ni la forma. La curva que sí lo hace es la regresión logística.
 
 ## Etapa 3: la regresión logística (slides 12 a 17)
 
@@ -171,8 +171,8 @@ medirlos en datos que el modelo no vio.
 | Sección | Qué se hace |
 |---|---|
 | 2 | La proporción p. |
-| 3 | La recta sobre el 0/1 y sus predicciones fuera de rango. |
-| 4 | La fracción que no paga por tramo de deuda: los nueve puntos y la recta. |
+| 3 | La fracción que no paga por tramo de deuda: los nueve puntos. |
+| 4 | La recta sobre el 0/1: predicciones fuera de rango y lejos de los puntos. |
 | 5 | `smf.logit`, e^b, `predict`, la curva, el summary y el intervalo de e^b. |
 | 6 | El estudiante con y sin la deuda; el Titanic con `C(clase)`; los perfiles. |
 | 7 | El umbral 0,5, la matriz de confusión con `pd.crosstab`, los dos errores, la exactitud contra la base y el Titanic como clasificador. |
