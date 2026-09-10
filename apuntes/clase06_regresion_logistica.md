@@ -34,21 +34,31 @@ síes entre n clientes es la binomial de la clase 5.
 
 Un dato que importa al final: el sí es raro (3,3%).
 
-## Etapa 2: la recta no sirve (slides 9 y 10)
+## Etapa 2: la recta no sirve (slides 9 a 11)
 
-Si se ajusta la recta de mínimos cuadrados con la respuesta 0/1, la recta
-intenta ser una probabilidad y no lo logra: con deuda 0 predice −0,08, una
-probabilidad negativa, y con 2.000 dólares predice 0,18 cuando en ese tramo el
-68% de los clientes no paga. Una probabilidad vive entre 0 y 1 y, en los datos,
-sube en forma de S: casi nadie deja de pagar hasta los 1.500 dólares y casi
-todos desde los 2.200. La recta no respeta ni el rango ni la forma.
+**De dónde salen las probabilidades** (slide 10). Se agrupan los clientes por
+**tramo** de deuda, un intervalo de 300 dólares (0 a 300, 300 a 600, y así
+hasta 2.700: nueve tramos), y en cada tramo se cuenta cuántos clientes hay y
+cuántos dejaron de pagar. En el tramo de 1.800 a 2.100 dólares hay 229
+clientes y 114 dejaron de pagar: 114 / 229 = 0,50. Esa fracción es la
+probabilidad de no pagar de un cliente con esa deuda, estimada con los datos,
+y es un punto del gráfico: nueve tramos, nueve puntos, que suben en forma de
+S: casi 0 con deudas bajas, 0,50 entre 1.800 y 2.100 dólares, 1 desde los
+2.400.
 
-## Etapa 3: la regresión logística (slides 11 a 16)
+**La recta** (slide 11). Si se ajusta la recta de mínimos cuadrados con la
+respuesta 0/1, la recta intenta ser una probabilidad y no lo logra: con deuda
+0 predice −0,08, una probabilidad negativa, y con 2.000 dólares predice 0,18
+cuando en ese tramo la mitad de los clientes no paga. Una probabilidad vive
+entre 0 y 1 y, en los datos, sube en forma de S. La recta no respeta ni el
+rango ni la forma.
 
-**La sigmoide** (slide 12) es una función que toma cualquier número z y
+## Etapa 3: la regresión logística (slides 12 a 17)
+
+**La sigmoide** (slide 13) es una función que toma cualquier número z y
 devuelve un número entre 0 y 1: en z = 0 vale 0,5, hacia la derecha se acerca
 a 1 y hacia la izquierda a 0, sin pasarse nunca. La **regresión logística**
-(slide 13) pasa la recta de siempre por esa función:
+(slide 14) pasa la recta de siempre por esa función:
 
     P(y = 1 | x) = 1 / (1 + e^(−(a + b·x)))
 
@@ -62,26 +72,26 @@ Con P = 0,8 las chances son 0,8 / 0,2 = 4: cuatro síes por cada no. Como la
 recta está en escala de logaritmo, **e^b dice cuánto se multiplican las
 chances por cada unidad de x**, igual que en el modelo en log de la clase 4.
 
-**Cómo se lee b** (slide 14). Con la deuda en cientos de dólares, b = 0,55 y
+**Cómo se lee b** (slide 15). Con la deuda en cientos de dólares, b = 0,55 y
 e^b = 1,73: cada 100 dólares más de deuda multiplican las chances de no pagar
 por 1,7. En probabilidades: 0,01 con 1.000 dólares, 0,08 con 1.500, 0,59 con
 2.000. La curva cruza 0,5 en 1.937 dólares.
 
-**Cómo se ajusta** (slide 15). No por mínimos cuadrados, porque con un 0/1 no
+**Cómo se ajusta** (slide 16). No por mínimos cuadrados, porque con un 0/1 no
 hay una distancia vertical con sentido, sino por **máxima verosimilitud**: se
 eligen los a y b que hacen más probable haber observado exactamente estos síes
 y noes. statsmodels lo resuelve por iteraciones; en el notebook, `smf.logit`
-con la misma sintaxis de fórmulas que `smf.ols` (slide 16), y `predict`
+con la misma sintaxis de fórmulas que `smf.ols` (slide 17), y `predict`
 entrega probabilidades.
 
-## Etapa 4: el mismo summary (slides 17 a 23)
+## Etapa 4: el mismo summary (slides 18 a 24)
 
 El summary tiene las columnas de la clase 5: coeficiente, error estándar (EE),
-z, valor p e intervalo (slide 18). La única diferencia es z en lugar de t: con
+z, valor p e intervalo (slide 19). La única diferencia es z en lugar de t: con
 muchos datos la referencia es la normal en vez de la t de Student, y P>|z| se
 lee igual que P>|t|.
 
-**Varias variables** (slides 19 y 20). Solos, los estudiantes dejan de pagar
+**Varias variables** (slides 20 y 21). Solos, los estudiantes dejan de pagar
 más (4,3% contra 2,9%). Pero los estudiantes deben más (deuda media 988
 dólares contra 772), y a igual deuda dejan de pagar menos. Al poner la deuda en
 el modelo, el coeficiente de estudiante cambia de signo: e^(−0,65) = 0,52, a
@@ -90,7 +100,7 @@ confusión de variables de la clase 4, ahora en la logística; `estudiante` es
 una dummy, como lo era el modo de transporte. El ingreso no aporta (p = 0,71):
 con la deuda en el modelo no dice nada nuevo.
 
-**El Titanic** (slides 21 a 23). 891 pasajeros; el 74% de las mujeres
+**El Titanic** (slides 22 a 24). 891 pasajeros; el 74% de las mujeres
 sobrevivió contra el 19% de los hombres, y la clase del pasaje ordena a ambos
 grupos. El modelo usa el sexo, la clase (categórica, con dummies) y la edad,
 que falta en 177 pasajeros. Cada e^b compara con una referencia, a igualdad de
@@ -101,13 +111,13 @@ recta suma el aporte de cada una y la sigmoide da la probabilidad: 0,94 para
 una mujer de primera clase de 30 años, 0,08 para un hombre de tercera de la
 misma edad.
 
-## Etapa 5: clasificar (slides 24 a 33)
+## Etapa 5: clasificar (slides 25 a 34)
 
-**El umbral** (slide 25). Un clasificador convierte la probabilidad en un sí
+**El umbral** (slide 26). Un clasificador convierte la probabilidad en un sí
 o un no con un umbral; el más simple es 0,5. Con él, el modelo dice "no paga"
 desde los 1.937 dólares de deuda.
 
-**La matriz de confusión** (slide 26) cruza lo real (filas) con lo predicho
+**La matriz de confusión** (slide 27) cruza lo real (filas) con lo predicho
 (columnas). La diagonal son los aciertos: verdaderos positivos y verdaderos
 negativos. Fuera de ella, los dos errores:
 
@@ -117,17 +127,17 @@ negativos. Fuera de ella, los dos errores:
   quien se le negó (42 en el ejemplo).
 
 Los dos errores no cuestan lo mismo, y cuál cuesta más lo dice el problema,
-no el modelo (slide 27): para el banco, el falso negativo es dinero perdido y
+no el modelo (slide 28): para el banco, el falso negativo es dinero perdido y
 el falso positivo, un cliente perdido; para un filtro de correo, el falso
 positivo es un mensaje real en la carpeta de spam; para un examen médico, el
 falso negativo es una enfermedad sin detectar.
 
-**La exactitud engaña cuando el sí es raro** (slide 28). La exactitud es la
+**La exactitud engaña cuando el sí es raro** (slide 29). La exactitud es la
 fracción de aciertos: el modelo acierta el 97,3%, pero decir que nadie deja de
 pagar acierta el 96,7%. De los 333 clientes que no pagan, el modelo detecta
 100. Con un sí raro, la exactitud mide sobre todo lo fácil: los noes.
 
-**Sensibilidad y especificidad** (slide 29) salen de la misma matriz y no
+**Sensibilidad y especificidad** (slide 30) salen de la misma matriz y no
 engañan:
 
 - **Sensibilidad** = VP / (VP + FN): de los que eran sí, qué fracción detectó
@@ -135,21 +145,21 @@ engañan:
 - **Especificidad** = VN / (VN + FP): de los que eran no, qué fracción dejó en
   paz. En el ejemplo, 9.625 / 9.667 = 0,996.
 
-**El umbral es una decisión** (slide 30). Bajar el umbral sube la sensibilidad
+**El umbral es una decisión** (slide 31). Bajar el umbral sube la sensibilidad
 y baja la especificidad, siempre. Con umbral 0,2 se detectan 199 de los 333
 morosos a cambio de 263 falsos positivos, y la exactitud baja, lo que no
 importa. No hay umbral correcto: hay un balance entre los dos errores, y lo
-fija el costo de cada uno. La **curva ROC** (slide 31) dibuja ese balance para
+fija el costo de cada uno. La **curva ROC** (slide 32) dibuja ese balance para
 todos los umbrales: sensibilidad contra 1 − especificidad, un punto por
 umbral; cuanto más se pega a la esquina superior izquierda, mejor separa el
 modelo, y la diagonal es adivinar al azar.
 
-**El Titanic como clasificador** (slide 32). Con un sí frecuente (41%), la
+**El Titanic como clasificador** (slide 33). Con un sí frecuente (41%), la
 exactitud sí informa: 79% contra el 59% de decir que todos murieron.
 Sensibilidad 0,71 y especificidad 0,84: el modelo se equivoca más con los que
 sobrevivieron.
 
-**Evaluar fuera de la muestra** (slide 33). Medir la exactitud en los mismos
+**Evaluar fuera de la muestra** (slide 34). Medir la exactitud en los mismos
 datos con que se ajustó el modelo es hacer trampa: el modelo ya los vio. Se
 separa al azar una parte de **prueba** antes de ajustar; el modelo se ajusta
 solo con la parte de **entrenamiento** y se mide en la de prueba. Con modelos
@@ -158,7 +168,7 @@ la de entrenamiento sube y la de prueba no, y la de prueba es la única que
 vale. Es el punto de partida de la evaluación de modelos en el resto del
 diplomado.
 
-## La respuesta a la pregunta de la clase (slides 34 y 35)
+## La respuesta a la pregunta de la clase (slides 35 y 36)
 
 El modelo no dice quién deja de pagar ni quién sobrevivió: dice con qué
 probabilidad. El sí o el no lo ponemos nosotros con el umbral, y con él
