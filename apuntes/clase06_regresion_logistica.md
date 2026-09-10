@@ -19,8 +19,9 @@ pasarla por una curva. Y hay una idea que ordena toda la clase:
 > y sus dos errores, la ponemos nosotros.
 
 Dos ejemplos, ninguno de la EOD: 10.000 clientes de una tarjeta de crédito
-(datos del libro de James, Witten, Hastie y Tibshirani) y 891 pasajeros del
-Titanic.
+(datos del libro de James, Witten, Hastie y Tibshirani), con su deuda en la
+tarjeta, es decir, lo que deben después del pago mensual, su ingreso anual y
+si son estudiantes; y 891 pasajeros del Titanic.
 
 ## Etapa 1: una respuesta que es sí o no (slides 5 a 8)
 
@@ -36,7 +37,7 @@ Un dato que importa al final: el sí es raro (3,3%).
 ## Etapa 2: la recta no sirve (slides 9 y 10)
 
 Si se ajusta la recta de mínimos cuadrados con la respuesta 0/1, la recta
-intenta ser una probabilidad y no lo logra: con saldo 0 predice −0,08, una
+intenta ser una probabilidad y no lo logra: con deuda 0 predice −0,08, una
 probabilidad negativa, y con 2.000 dólares predice 0,18 cuando en ese tramo el
 68% de los clientes no paga. Una probabilidad vive entre 0 y 1 y, en los datos,
 sube en forma de S: casi nadie deja de pagar hasta los 1.500 dólares y casi
@@ -61,8 +62,8 @@ Con P = 0,8 las chances son 0,8 / 0,2 = 4: cuatro síes por cada no. Como la
 recta está en escala de logaritmo, **e^b dice cuánto se multiplican las
 chances por cada unidad de x**, igual que en el modelo en log de la clase 4.
 
-**Cómo se lee b** (slide 14). Con el saldo en cientos de dólares, b = 0,55 y
-e^b = 1,73: cada 100 dólares más de saldo multiplican las chances de no pagar
+**Cómo se lee b** (slide 14). Con la deuda en cientos de dólares, b = 0,55 y
+e^b = 1,73: cada 100 dólares más de deuda multiplican las chances de no pagar
 por 1,7. En probabilidades: 0,01 con 1.000 dólares, 0,08 con 1.500, 0,59 con
 2.000. La curva cruza 0,5 en 1.937 dólares.
 
@@ -81,13 +82,13 @@ muchos datos la referencia es la normal en vez de la t de Student, y P>|z| se
 lee igual que P>|t|.
 
 **Varias variables** (slides 19 y 20). Solos, los estudiantes dejan de pagar
-más (4,3% contra 2,9%). Pero los estudiantes deben más (saldo medio 988
-dólares contra 772), y a igual saldo dejan de pagar menos. Al poner el saldo en
+más (4,3% contra 2,9%). Pero los estudiantes deben más (deuda media 988
+dólares contra 772), y a igual deuda dejan de pagar menos. Al poner la deuda en
 el modelo, el coeficiente de estudiante cambia de signo: e^(−0,65) = 0,52, a
-igual saldo e ingreso las chances de un estudiante son la mitad. Es la
+igual deuda e ingreso las chances de un estudiante son la mitad. Es la
 confusión de variables de la clase 4, ahora en la logística; `estudiante` es
 una dummy, como lo era el modo de transporte. El ingreso no aporta (p = 0,71):
-con el saldo en el modelo no dice nada nuevo.
+con la deuda en el modelo no dice nada nuevo.
 
 **El Titanic** (slides 21 a 23). 891 pasajeros; el 74% de las mujeres
 sobrevivió contra el 19% de los hombres, y la clase del pasaje ordena a ambos
@@ -104,7 +105,7 @@ misma edad.
 
 **El umbral** (slide 25). Un clasificador convierte la probabilidad en un sí
 o un no con un umbral; el más simple es 0,5. Con él, el modelo dice "no paga"
-desde los 1.937 dólares de saldo.
+desde los 1.937 dólares de deuda.
 
 **La matriz de confusión** (slide 26) cruza lo real (filas) con lo predicho
 (columnas). La diagonal son los aciertos: verdaderos positivos y verdaderos
@@ -169,10 +170,10 @@ medirlos en datos que el modelo no vio.
 
 | Sección | Qué se hace |
 |---|---|
-| 2 | La proporción, la binomial y la fracción que no paga por tramo de saldo. |
+| 2 | La proporción, la binomial y la fracción que no paga por tramo de deuda. |
 | 3 | La recta sobre el 0/1 y sus predicciones fuera de rango. |
 | 4 | `smf.logit`, e^b, `predict`, la curva, el summary y el intervalo de e^b. |
-| 5 | El estudiante con y sin el saldo; el Titanic con `C(clase)`; los perfiles. |
+| 5 | El estudiante con y sin la deuda; el Titanic con `C(clase)`; los perfiles. |
 | 6 | El umbral, `pd.crosstab`, la función `evaluar`, la tabla de umbrales y la curva ROC. |
 | 7 | Reparto entrenamiento y prueba, y la exactitud en cada parte. |
 
