@@ -132,6 +132,21 @@ confusión de variables de la clase 4, ahora en la logística; `estudiante` es
 una dummy, como lo era el modo de transporte. El ingreso no aporta (p = 0,71):
 con la deuda en el modelo no dice nada nuevo.
 
+El mecanismo, con un ejemplo inventado de 200 clientes:
+
+| | no estudiantes | estudiantes |
+|---|---|---|
+| deuda baja | 80 clientes, 4 no pagan (5%) | 20 clientes, 0 no pagan (0%) |
+| deuda alta | 20 clientes, 10 no pagan (50%) | 80 clientes, 32 no pagan (40%) |
+| total | 100 clientes, 14 no pagan (14%) | 100 clientes, 32 no pagan (32%) |
+
+Dentro de cada tramo los estudiantes pagan mejor, pero 80 de los 100
+estudiantes están en el tramo de deuda alta y solo 20 de los 100 no
+estudiantes, así que en el total parecen peores. El modelo con solo
+`estudiante` lee el total; el modelo con la deuda compara dentro de cada
+tramo. Ninguno se equivoca en la aritmética: responden preguntas distintas, y
+la segunda es la que interesa.
+
 **El Titanic** (slides 25 a 27). 891 pasajeros; el 74% de las mujeres
 sobrevivió contra el 19% de los hombres, y la clase del pasaje ordena a ambos
 grupos. El modelo usa el sexo, la clase (categórica, con dummies) y la edad,
