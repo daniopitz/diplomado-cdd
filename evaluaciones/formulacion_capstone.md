@@ -22,8 +22,8 @@ El documento se organiza en cinco secciones, una por criterio de la rúbrica.
 1. **El problema y la pregunta.** El contexto (su trabajo o un dominio de
    interés público), el problema delimitado y qué decisión o proceso mejoraría
    resolverlo. Debe incluir la pregunta del proyecto, específica en variables y
-   población, y una hipótesis verificable asociada, como se trabajó en la
-   clase 2.
+   población, junto con su objetivo y/o una hipótesis verificable asociada,
+   como se trabajó en la clase 2.
 2. **Los datos y sus metadatos.** Las fuentes y tablas que se usarán, sus
    variables relevantes con tipo y unidad, y quién produce cada dato. Si aún
    no tienen los datos en la mano, describan lo que se sabe de ellos.
