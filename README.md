@@ -50,7 +50,10 @@ evalúa con tres actividades asociadas al proyecto Capstone del diplomado:
 |-----------|--------------------------|-------------|
 | Formulación del proyecto Capstone | RA1.2 | 30% |
 | Primer análisis exploratorio de datos: código con NumPy, Pandas y Matplotlib sobre datos del proyecto | RA1.1 | 40% |
-| Informe de avance del proyecto Capstone: comunicación oral y escrita de los primeros hallazgos | RA1.2 | 25% |
+| Informe de avance del proyecto Capstone: comunicación oral y escrita de los primeros hallazgos | RA1.2 | 30% |
+
+El programa oficial indica 25% para el informe de avance, con lo que las
+ponderaciones suman 95%; en el módulo se usa 30%, para que sumen 100%.
 
 El proyecto Capstone se desarrolla en equipos de máximo dos personas; la
 conformación se define en la primera semana. El proyecto puede usar cualquier
@@ -65,7 +68,7 @@ publican durante el módulo.
 |-----------|---------|--------------------|--------------|
 | [Formulación del proyecto Capstone](evaluaciones/formulacion_capstone.md) (30%) | **lu 07-sep** | [publicada](evaluaciones/rubricas/rubrica_formulacion_capstone.md) (ju 27-ago, clase 2) | [idea de cada equipo: ju 03-sep, clase 4](evaluaciones/presentacion_idea_capstone.md) ([PDF](evaluaciones/presentacion_idea_capstone.pdf)) |
 | [Primer análisis exploratorio de datos](evaluaciones/eda_capstone.md) (40%) | **ma 15-sep** | [publicada](evaluaciones/rubricas/rubrica_eda_capstone.md) (mié 02-sep) | |
-| [Informe de avance del proyecto](evaluaciones/avance_capstone.md) (25%; oral 50% y escrito 50%) ([PDF](evaluaciones/avance_capstone.pdf)) | **vi 25-sep** (informe escrito, máximo 7 páginas) | publicadas (lu 21-sep): [presentación oral](evaluaciones/rubricas/rubrica_avance_capstone_presentacion.md) ([PDF](evaluaciones/rubricas/rubrica_avance_capstone_presentacion.pdf)) e [informe escrito](evaluaciones/rubricas/rubrica_avance_capstone_informe.md) ([PDF](evaluaciones/rubricas/rubrica_avance_capstone_informe.pdf)) | oral: ma 22-sep (clase 8), máximo 10 minutos por equipo |
+| [Informe de avance del proyecto](evaluaciones/avance_capstone.md) (30%; oral 50% y escrito 50%) ([PDF](evaluaciones/avance_capstone.pdf)) | **vi 25-sep** (informe escrito, máximo 7 páginas) | publicadas (lu 21-sep): [presentación oral](evaluaciones/rubricas/rubrica_avance_capstone_presentacion.md) ([PDF](evaluaciones/rubricas/rubrica_avance_capstone_presentacion.pdf)) e [informe escrito](evaluaciones/rubricas/rubrica_avance_capstone_informe.md) ([PDF](evaluaciones/rubricas/rubrica_avance_capstone_informe.pdf)) | oral: ma 22-sep (clase 8), máximo 10 minutos por equipo |
 
 Los talleres de ecosistema Python que el programa asigna a las semanas 2 y 3 se
 realizan dentro del bloque práctico de las clases de esas semanas, con los

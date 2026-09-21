@@ -1,7 +1,7 @@
 # Rúbrica: Presentación oral del avance del proyecto Capstone
 
 Diplomado en Ciencia de Datos Aplicada, Módulo 1. Evaluación 3: Informe de
-avance del proyecto Capstone (25% del módulo, RA1.2). La presentación oral es
+avance del proyecto Capstone (30% del módulo, RA1.2). La presentación oral es
 el 50% de esta evaluación; el informe escrito tiene su
 [propia rúbrica](rubrica_avance_capstone_informe.md).
 

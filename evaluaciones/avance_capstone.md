@@ -1,7 +1,7 @@
 # Evaluación 3: Informe de avance del proyecto Capstone
 
 Diplomado en Ciencia de Datos Aplicada, Módulo 1: Introducción y fundamentos
-estadísticos. Ponderación: 25% del módulo. Resultado de aprendizaje RA1.2.
+estadísticos. Ponderación: 30% del módulo. Resultado de aprendizaje RA1.2.
 
 El informe de avance comunica los primeros hallazgos del proyecto, en dos
 formatos: una presentación oral ante el curso y un informe escrito breve.
